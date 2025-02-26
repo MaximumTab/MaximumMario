@@ -1,40 +1,10 @@
 fileFormatVersion: 2
-guid: 1a28efe993aead94c864802b37363b57
+guid: 686bd29949c5b5f41b541ae6fd9fe47d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3105345502344721447
-    second: Background Assets_0
-  - first:
-      213: 1477823143744184241
-    second: Background Assets_1
-  - first:
-      213: -8657548213595039666
-    second: Background Assets_2
-  - first:
-      213: 7698281062000985798
-    second: Background Assets_3
-  - first:
-      213: -8066211655488142177
-    second: Background Assets_4
-  - first:
-      213: 3455998078852012078
-    second: Background Assets_5
-  - first:
-      213: 7308087507880591719
-    second: Background Assets_6
-  - first:
-      213: 5751448095108200757
-    second: Background Assets_7
-  - first:
-      213: 4325112033236650316
-    second: Background Assets_8
-  - first:
-      213: -8899861376846393097
-    second: Background Assets_9
-  - first:
-      213: -2762551526774025503
-    second: Background Assets_10
+      213: -1833371352791695189
+    second: Static Bricks_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -156,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background Assets_0
+      name: Static Bricks_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 768
-        height: 215
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,8 +141,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7243d141847681b20800000000000000
-      internalID: 3105345502344721447
+      spriteID: ba0497fd77e8e86e0800000000000000
+      internalID: -1833371352791695189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Static Bricks_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4cc1ff705f94a4bae03e7bd094d6e6
+      internalID: 61824149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Static Bricks_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06402ec9b9e10542b500eff7eaaf499
+      internalID: -1044675314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Static Bricks_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f7376cc7f6718468cf1cec84c7fece
+      internalID: 1560588602
       vertices: []
       indices: 
       edges: []
@@ -181,7 +217,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8bfd6567b5afaaa42ad6059e853187b1
+    spriteID: 0790e372fe2daaa47b4656daabeb4411
     internalID: 0
     vertices: []
     indices: 
@@ -191,7 +227,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Background Assets_0: 3105345502344721447
+      Static Bricks_0: -1833371352791695189
+      Static Bricks_1: 61824149
+      Static Bricks_2: -1044675314
+      Static Bricks_3: 1560588602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
