@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 133311223}
   - component: {fileID: 133311222}
   - component: {fileID: 133311221}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7186,18 +7186,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 5
   sprintSpeed: 8
-  acceleration: 10
+  acceleration: 30
   deceleration: 15
   jumpForce: 10
   gravityScale: 2
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 0
   groundCheckDistance: 0.1
-  wallCheckDistance: 0.1
 --- !u!61 &2033470422
 BoxCollider2D:
   m_ObjectHideFlags: 0
