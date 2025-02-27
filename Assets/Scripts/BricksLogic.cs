@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -9,10 +10,12 @@ public class BricksLogic : MonoBehaviour
     [SerializeField] private Sprite[] DisplayBricks;
 
     [SerializeField] private bool Invisible=false;
+
+    [SerializeField] private Animator BrickAnim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        BrickAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -64,5 +67,9 @@ public class BricksLogic : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().sprite = DisplayBricks[i];
     }
 
+    void OnTriggerEnter()
+    {
+        
+    }
 }
 
