@@ -5,32 +5,25 @@ using System.Collections;
 public class TimeManager : MonoBehaviour
 {
     public TextMeshProUGUI timeText;
-
-    public float timeRemaining = 400f; // Starting time
+    public float timeRemaining = 400f;
     private bool timerIsRunning = true;
     private bool isConvertingToScore = false;
 
-    void Update()
+    public void StopTimer()
     {
         if (timerIsRunning)
         {
-            if (timeRemaining > 0)
-            {
-                timeRemaining -= Time.deltaTime;
-                DisplayTime(timeRemaining);
-            }
-            else
-            {
-                Debug.Log("Ran out of Time");
-                timeRemaining = 0;
-                timerIsRunning = false;
-            }
+            timerIsRunning = false;
+            Debug.Log("Timer stopped at: " + Mathf.CeilToInt(timeRemaining));
         }
+    }
 
-        // Simulate flagpole touch with 'P' key for testing
-        if (Input.GetKeyDown(KeyCode.P) && !isConvertingToScore)
+    void Update()
+    {
+        if (timerIsRunning && timeRemaining > 0)
         {
-            StartCoroutine(ConvertTimeToScore());
+            timeRemaining -= Time.deltaTime;
+            DisplayTime(timeRemaining);
         }
     }
 
@@ -40,19 +33,34 @@ public class TimeManager : MonoBehaviour
         timeText.text = seconds.ToString();
     }
 
-    IEnumerator ConvertTimeToScore()
+    public void ConvertTimeToScore()
     {
-        timerIsRunning = false;
+        if (!isConvertingToScore)
+        {
+            StartCoroutine(ConvertTimeCoroutine());
+        }
+    }
+
+    IEnumerator ConvertTimeCoroutine()
+    {
         isConvertingToScore = true;
+        ScoreManager scoreManager = FindAnyObjectByType<ScoreManager>();
+
+        if (scoreManager == null)
+        {
+            Debug.LogError("ScoreManager not found in the scene!");
+            yield break;
+        }
 
         while (timeRemaining > 0)
         {
-            FindAnyObjectByType<ScoreManager>().AddScore(50);
+            scoreManager.AddScore(50);
             timeRemaining--;
             DisplayTime(timeRemaining);
-            yield return new WaitForSeconds(0.025f); // Adjust speed of countdown
+            yield return new WaitForSeconds(0.01f);
         }
 
         isConvertingToScore = false;
+        Debug.Log("Time converted to score.");
     }
 }
