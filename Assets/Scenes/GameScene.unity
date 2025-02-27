@@ -6996,7 +6996,9 @@ MonoBehaviour:
   musicSounds:
   - name: BGM
     clip: {fileID: 8300000, guid: 3a0e5e89644f54e458edaaeea0b02705, type: 3}
-  sfxSounds: []
+  sfxSounds:
+  - name: JumpSmall
+    clip: {fileID: 8300000, guid: 138cf78ea94f1fb40ae04dfad0783ea7, type: 3}
   musicSource: {fileID: 620231395}
   sfxSource: {fileID: 377100374}
 --- !u!4 &1601621264
