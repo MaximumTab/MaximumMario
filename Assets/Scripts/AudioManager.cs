@@ -51,7 +51,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-      public void PlayGameoverSounds(string name)
+      public void PlayConditionSound(string name)
 {
     Sound s = Array.Find(conditionSounds, x => x.name == name);
 
