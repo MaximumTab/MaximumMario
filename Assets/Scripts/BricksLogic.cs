@@ -6,6 +6,9 @@ public class BricksLogic : MonoBehaviour
 {
     private string Name="No Block Chosen";
     private string Location= "No Location Chosen";
+    [SerializeField] private Sprite[] DisplayBricks;
+
+    [SerializeField] private bool Invisible=false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,14 +23,16 @@ public class BricksLogic : MonoBehaviour
 
     public string BrickSet(string name, string location)
     {
-        
+        int i = 0;
         switch (location)
         {
             case "Underground":
                 Location = location;
+                i = 15;
                 break;
             case "Overworld":
                 Location = location;
+                i = 0;
                 break;
             default:
                 Location = "No Location Chosen";
@@ -38,18 +43,25 @@ public class BricksLogic : MonoBehaviour
             case "Lucky Block":
                 Name = name;
                 break;
-            case "Smash Blocks":
+            case "Smash Block":
                 Name = name;
+                i += 10;
                 break;
-            case "Safe Blocks":
+            case "Safe Block":
                 Name = name;
+                i += 5;
                 break;
             default:
                 Name = "No Block Chosen";
                 break;
         }
-
+        Spritebrick(i);
         return Name+", "+Location;
+    }
+
+    void Spritebrick(int i)
+    {
+        gameObject.GetComponent<SpriteRenderer>().sprite = DisplayBricks[i];
     }
 
 }
