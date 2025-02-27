@@ -7674,7 +7674,7 @@ GameObject:
   - component: {fileID: 1560185673}
   - component: {fileID: 1560185674}
   m_Layer: 0
-  m_Name: temppole
+  m_Name: Flagpole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7812,11 +7812,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flagBottomPosition: {fileID: 857478945}
-  groundPosition: {fileID: 886593537}
   castlePosition: {fileID: 1309718764}
-  slideDuration: 2
-  hopHeight: 1.5
-  hopDistance: 1
+  slideSpeed: 3
   walkSpeed: 1.5
 --- !u!1 &1601621262
 GameObject:
