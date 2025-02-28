@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1489548628238208020}
   - component: {fileID: 5834598192495346468}
   - component: {fileID: 7831950272841769651}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bricks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,38 +103,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3728f95500d18049a0763e1621c76dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisplayBricks:
-  - {fileID: -5160660819957252609, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -771983731, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -406381321, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 361266311, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -1204163000, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 977458755, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -1717831820, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 51168035, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -898104833, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 2099838913, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 178665227, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 1621852621, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 146891476, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 666751615, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -2064383140, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -2114133232, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -1656507580, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -381824282, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 1738754416, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -221820028, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 784786436, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -1795014846, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 1624453078, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 1368958519, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 294446523, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -93241281, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -1403927603, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: -1779441523, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 1202888574, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  - {fileID: 337147965, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
   Invisible: 0
+  Lucky: 0
+  Smash: 0
+  isRandom: 1
+  location: 
+  RandomSeed: []
+  GaurenteeObject: {fileID: 0}
+  Hp: 1
+  BrickAnim: {fileID: 0}
 --- !u!61 &1489548628238208020
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -225,7 +202,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.07}
+  m_Size: {x: 0.5, y: 0.07}
   m_EdgeRadius: 0
 --- !u!95 &7831950272841769651
 Animator:
@@ -240,7 +217,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 6e92e4c213de66941bbcf08d2c995c0a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
