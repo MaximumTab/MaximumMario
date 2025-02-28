@@ -25,6 +25,16 @@ public class PlayerController : MonoBehaviour
     [Header("Layers & Distances")]
     public LayerMask groundLayer;       // Layer for ground checks
     public float groundCheckDistance = 0.05f;  // Distance for ground checking
+   
+    [Header("Pipe Settings")]
+    public LayerMask pipeLayer;                 // Layer for pipe checks
+    public float pipeCheckDistance = 0.05f;     // Distance for up/down pipe checking
+    
+
+    [Header("Block Settings")]
+    public LayerMask blockLayer;                // Layer for special blocks above
+    public float blockCheckDistance = 0.05f;    // Distance for detecting blocks above
+   
 
     private void Start()
     {
@@ -47,6 +57,22 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             AudioManager.Instance.PlaySFX("JumpSmall");
+        }
+
+        // -------------------- PIPE DETECTION LOGIC --------------------
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            CheckPipeAbove();
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            CheckPipeBelow();
+        }
+
+        // -------------------- BLOCK DETECTION LOGIC --------------------
+        if (!isGrounded && rb.linearVelocity.y > 0)
+        {
+            CheckBlockAbove();
         }
     }
 
@@ -150,4 +176,70 @@ public class PlayerController : MonoBehaviour
 
         return (hit.collider != null);
     }
+
+    // -------------------- PIPE CHECK FUNCTIONS --------------------
+    private void CheckPipeAbove()
+    {
+        // BoxCast slightly above the player to detect an upward pipe
+        Vector2 topOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.max.y);
+        Vector2 size = new Vector2(playerCollider.bounds.size.x * 0.9f, 0.1f);
+
+        RaycastHit2D hit = Physics2D.BoxCast(
+            topOrigin,
+            size,
+            0f,
+            Vector2.up,
+            pipeCheckDistance,
+            pipeLayer
+        );
+
+        if (hit.collider != null)
+        {
+            Debug.Log("Pipe above detected! Going up...");//----------------------------pipe goin uuuuuuuuuupppppp---------
+        }
+    }
+
+    private void CheckPipeBelow()
+    {
+        // BoxCast slightly below the player to detect a downward pipe
+        Vector2 bottomOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y);
+        Vector2 size = new Vector2(playerCollider.bounds.size.x * 0.9f, 0.1f);
+
+        RaycastHit2D hit = Physics2D.BoxCast(
+            bottomOrigin,
+            size,
+            0f,
+            Vector2.down,
+            pipeCheckDistance,
+            pipeLayer
+        );
+
+        if (hit.collider != null)
+        {
+            Debug.Log("Pipe below detected! Going down...");//----------------------------pipe goin doooooowwwwwwwwnnnnnnnnn---------
+        }
+    }
+   
+
+    // -------------------- BLOCK CHECK FUNCTION --------------------
+    private void CheckBlockAbove()
+    {
+        Vector2 topOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.max.y);
+        Vector2 size = new Vector2(playerCollider.bounds.size.x * 0.9f, 0.1f);
+
+        RaycastHit2D hit = Physics2D.BoxCast(
+            topOrigin,
+            size,
+            0f,
+            Vector2.up,
+            blockCheckDistance,
+            blockLayer
+        );
+
+        if (hit.collider != null)
+        {
+            Debug.Log("Hit special block above!");//----------------------------power up tiiiiimmmmmmmmmeeeeee---------
+        }
+    }
+   
 }
