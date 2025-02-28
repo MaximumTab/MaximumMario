@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 133311221}
   - component: {fileID: 133311220}
   - component: {fileID: 133311219}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7112,6 +7112,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977077864}
   m_CullTransparentMesh: 1
+--- !u!1001 &1011083448
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 880942820548155933, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: m_Name
+      value: Bricks
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569615626056720029, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: Lucky
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569615626056720029, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: Smash
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7831950272841769651, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390962134846896689, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.3966985
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390962134846896689, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.401299
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390962134846896689, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390962134846896689, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390962134846896689, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390962134846896689, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390962134846896689, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390962134846896689, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390962134846896689, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390962134846896689, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 204dcff747913d74d9d43a19a6132653, type: 3}
 --- !u!1 &1188632265
 GameObject:
   m_ObjectHideFlags: 0
@@ -7122,7 +7191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1188632267}
   - component: {fileID: 1188632266}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7542,7 +7611,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &2033470424
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7622,10 +7691,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 2033470420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 924bcad48f74d7841bb5182414fef6ee, type: 3}
+  m_Script: {fileID: 11500000, guid: a4407fd47df57ad4e89517c924672e80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 5
+  maxSpeed: 5
+  sprintSpeed: 8
+  acceleration: 10
+  deceleration: 15
+  jumpForce: 10
+  gravityScale: 2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  groundCheckDistance: 0.05
+  wallCheckDistance: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -7637,3 +7719,4 @@ SceneRoots:
   - {fileID: 1601621264}
   - {fileID: 1188632267}
   - {fileID: 2033470425}
+  - {fileID: 1011083448}
