@@ -10,6 +10,8 @@ public class Goomba : MonoBehaviour
     private Camera mainCamera;
 
     public float stompForce = 5f; // Bounce force applied to player after stomping
+    public Sprite stompedSprite; // Stomped sprite
+    private bool isStomped = false; // Prevents multiple triggers
 
     void Start()
     {
@@ -20,7 +22,7 @@ public class Goomba : MonoBehaviour
 
     void Update()
     {
-        if (hasActivated) return; // Don't check again if already activated
+        if (hasActivated) return;
 
         // Get camera boundaries
         Vector3 screenPoint = mainCamera.WorldToViewportPoint(transform.position);
@@ -34,7 +36,7 @@ public class Goomba : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!hasActivated) return;
+        if (!hasActivated || isStomped) return;
 
         // Ensure Goomba keeps moving left or right while falling naturally
         rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
@@ -78,6 +80,9 @@ public class Goomba : MonoBehaviour
 
     void Stomped(GameObject player)
     {
+        if (isStomped) return; // Prevent multiple triggers
+        isStomped = true;
+
         // Add bounce effect to player
         Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
         if (playerRb != null)
@@ -86,10 +91,31 @@ public class Goomba : MonoBehaviour
         }
 
         AudioManager.Instance.PlaySFX("Stomp");
-
         FindAnyObjectByType<ScoreManager>().AddScore(100);
-        
-        // Destroy Goomba
+
+        // Disable the Animator to stop it from overriding the sprite change
+        Animator animator = GetComponent<Animator>();
+        if (animator != null)
+        {
+            animator.enabled = false;
+        }
+
+        // Change sprite to stomped version
+        if (stompedSprite != null)
+        {
+            spriteRenderer.sprite = stompedSprite;
+        }
+
+        // Disable physics interaction
+        rb.simulated = false;
+
+        // Destroy Goomba after a delay
+        Invoke("DestroyGoomba", 0.2f); // 0.2 seconds before destruction
+    }
+
+
+    void DestroyGoomba()
+    {
         Destroy(gameObject);
     }
 
@@ -102,6 +128,5 @@ public class Goomba : MonoBehaviour
     void Flip()
     {
         direction *= -1;
-        spriteRenderer.flipX = !spriteRenderer.flipX;
     }
 }
