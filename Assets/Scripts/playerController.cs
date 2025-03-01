@@ -205,9 +205,11 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Pipe below detected! Starting downward cutscene...");
             StartCoroutine(PipeCutscene());
+            AudioManager.Instance.PlaySFX("Pipe");
         }
     }
 
+    [System.Obsolete]
     private IEnumerator PipeCutscene()
     {
         isInPipeCutscene = true;
