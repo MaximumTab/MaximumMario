@@ -8144,7 +8144,7 @@ MonoBehaviour:
   isRandom: 0
   location: 
   RandomSeed: []
-  GaurenteeObject: {fileID: 0}
+  GaurenteeObject: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   Hp: 1
   MariosmallTag: 
   BrickAnim: {fileID: 0}
@@ -20053,7 +20053,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -21137,7 +21137,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: d4db3035b63d1314e9d674226954ca14, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
