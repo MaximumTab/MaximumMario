@@ -137,6 +137,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 2, y: 1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
@@ -149,6 +159,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: cd114810d4f7f9241b44d8bf297376c7, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 656a081fd77657e4caa1b227de7c5beb, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: b82246a80f2312f4ab918041dd490bdb, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -1833371352791695189, guid: 686bd29949c5b5f41b541ae6fd9fe47d, type: 3}
@@ -160,8 +172,10 @@ Tilemap:
     m_Data: {fileID: 1560588602, guid: 686bd29949c5b5f41b541ae6fd9fe47d, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 784786436, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -5351519302435635654, guid: 93ef8af0919b41c4e857fc9f277ec992, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 5
+  - m_RefCount: 6
     m_Data:
       e00: 1
       e01: 0
@@ -180,13 +194,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 5
+  - m_RefCount: 6
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -4, y: 0, z: 0}
-  m_Size: {x: 3, y: 2, z: 1}
+  m_Size: {x: 7, y: 2, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -258,7 +272,7 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!114 &6043359222469102168
+--- !u!114 &4451160407101998039
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
