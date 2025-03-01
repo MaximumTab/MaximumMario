@@ -9,6 +9,8 @@ public class Goomba : MonoBehaviour
     private bool hasActivated = false; // Tracks if Goomba has been activated
     private Camera mainCamera;
 
+    public float stompForce = 5f; // Bounce force applied to player after stomping
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -23,8 +25,8 @@ public class Goomba : MonoBehaviour
         // Get camera boundaries
         Vector3 screenPoint = mainCamera.WorldToViewportPoint(transform.position);
 
-        // Check if Goomba is within camera's view
-        if (screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1)
+        // Check if Goomba is just outside the camera's view (slightly off-screen)
+        if (screenPoint.x > -0.02f && screenPoint.x < 1.02f && screenPoint.y > 0 && screenPoint.y < 1)
         {
             hasActivated = true; // Start moving permanently
         }
@@ -40,14 +42,61 @@ public class Goomba : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        foreach (ContactPoint2D contact in collision.contacts)
+        GameObject other = collision.gameObject;
+
+        if (other.CompareTag("Player"))
         {
-            if (Mathf.Abs(contact.normal.x) > Mathf.Abs(contact.normal.y))
+            foreach (ContactPoint2D contact in collision.contacts)
             {
-                Flip();
-                return;
+                // If the collision is from above (stomp)
+                if (contact.normal.y < -0.5f)
+                {
+                    Stomped(other);
+                    return;
+                }
+                // If the player collides from the side, they take damage (implement as needed)
+                else if (Mathf.Abs(contact.normal.x) > Mathf.Abs(contact.normal.y))
+                {
+                    PlayerHit(other);
+                    return;
+                }
             }
         }
+        else
+        {
+            // Flip direction on wall collision
+            foreach (ContactPoint2D contact in collision.contacts)
+            {
+                if (Mathf.Abs(contact.normal.x) > Mathf.Abs(contact.normal.y))
+                {
+                    Flip();
+                    return;
+                }
+            }
+        }
+    }
+
+    void Stomped(GameObject player)
+    {
+        // Add bounce effect to player
+        Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
+        if (playerRb != null)
+        {
+            playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, stompForce);
+        }
+
+        AudioManager.Instance.PlaySFX("Stomp");
+
+        FindAnyObjectByType<ScoreManager>().AddScore(100);
+        
+        // Destroy Goomba
+        Destroy(gameObject);
+    }
+
+    void PlayerHit(GameObject player)
+    {
+        // Implement player damage here (e.g., reduce health, trigger animation, etc.)
+        Debug.Log("Player hit by Goomba! Take damage.");
     }
 
     void Flip()
