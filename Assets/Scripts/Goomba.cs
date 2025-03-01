@@ -32,9 +32,9 @@ public class Goomba : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!hasActivated) return; // Stop if Goomba hasn't been activated yet
+        if (!hasActivated) return;
 
-        // Keep existing Y velocity for gravity, only modify X velocity
+        // Ensure Goomba keeps moving left or right while falling naturally
         rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
     }
 
