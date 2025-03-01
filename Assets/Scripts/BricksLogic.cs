@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class BricksLogic : MonoBehaviour
 {
-    private string Name = "No Block Chosen";
-    private string Location = "No Location Chosen";
 
     [SerializeField] private bool Invisible = false;
     [SerializeField] private bool Lucky = false;
@@ -14,6 +12,7 @@ public class BricksLogic : MonoBehaviour
     [SerializeField] private GameObject[] RandomSeed;
     [SerializeField] private GameObject GaurenteeObject;
     [SerializeField] private int Hp=1;
+    [SerializeField] private string MariosmallTag;
     private int i = 0;
 
     [SerializeField] private Animator BrickAnim;
@@ -36,14 +35,19 @@ public class BricksLogic : MonoBehaviour
 
     private void SpewObject()
     {
-        if (isRandom)
+        if (isRandom&&RandomSeed.Length>0)
         {
             Instantiate(RandomSeed[UnityEngine.Random.Range(0,RandomSeed.Length)]);
         }
-        else
+        else if(GaurenteeObject!=null)
         {
             Instantiate(GaurenteeObject);
         }
+    }
+
+    private void Break()
+    {
+        
     }
 
 
@@ -55,16 +59,17 @@ public class BricksLogic : MonoBehaviour
             if(!Smash)
                 Hp -= 1;
             BrickAnim.Play("Brick Bounce", 0);
+            SpewObject();
         }
         if(Hp==0&&!Smash)
         {
             Lucky = false;
-            BrickAnim.SetBool("Lucky",Lucky);
-            BrickAnim.Play("Hp",1);
+            BrickAnim.SetBool("Lucky", Lucky);
+            BrickAnim.Play("Hp", 1);
         }
-        else if(Smash)
+        else if(Smash/*&&!other.CompareTag(MariosmallTag)*/)
         {
-            
+            //Smashed block animation via other object
         }
     }
 }
