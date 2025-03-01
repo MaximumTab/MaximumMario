@@ -1,0 +1,4147 @@
+fileFormatVersion: 2
+guid: 21899b7e3b4a341429732b6d9ea58b58
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6621379638539442072
+    second: Mario's Useful_0
+  - first:
+      213: -7570241432603759255
+    second: Mario's Useful_1
+  - first:
+      213: 8556151717330168900
+    second: Mario's Useful_2
+  - first:
+      213: -833345349361812164
+    second: Mario's Useful_3
+  - first:
+      213: 3279703835201697370
+    second: Mario's Useful_4
+  - first:
+      213: -2617479534940912806
+    second: Mario's Useful_5
+  - first:
+      213: 4595849131272023601
+    second: Mario's Useful_6
+  - first:
+      213: -4123672354466767774
+    second: Mario's Useful_7
+  - first:
+      213: -8721861682397825938
+    second: Mario's Useful_8
+  - first:
+      213: 4073050101889337064
+    second: Mario's Useful_9
+  - first:
+      213: 3245118835064661588
+    second: Mario's Useful_10
+  - first:
+      213: 3080618588598442200
+    second: Mario's Useful_11
+  - first:
+      213: 5465154306928393857
+    second: Mario's Useful_12
+  - first:
+      213: -6175484404366151457
+    second: Mario's Useful_13
+  - first:
+      213: -7681409546649692447
+    second: Mario's Useful_14
+  - first:
+      213: -3015361429626103070
+    second: Mario's Useful_15
+  - first:
+      213: 6363970587972644053
+    second: Mario's Useful_16
+  - first:
+      213: -271392305682214873
+    second: Mario's Useful_17
+  - first:
+      213: 2687042631883396189
+    second: Mario's Useful_18
+  - first:
+      213: 3097414240937517639
+    second: Mario's Useful_19
+  - first:
+      213: -2133155485632020390
+    second: Mario's Useful_20
+  - first:
+      213: -3165284609637274748
+    second: Mario's Useful_21
+  - first:
+      213: 2674504615912854972
+    second: Mario's Useful_22
+  - first:
+      213: -3984232519766418511
+    second: Mario's Useful_23
+  - first:
+      213: -8730429531994337842
+    second: Mario's Useful_24
+  - first:
+      213: -3595739183747458636
+    second: Mario's Useful_25
+  - first:
+      213: -4073839124721877745
+    second: Mario's Useful_26
+  - first:
+      213: 3458328614987094158
+    second: Mario's Useful_27
+  - first:
+      213: -7049190286073730331
+    second: Mario's Useful_28
+  - first:
+      213: 8991227721392363641
+    second: Mario's Useful_29
+  - first:
+      213: -6575984986725351198
+    second: Mario's Useful_30
+  - first:
+      213: 2044310172635655795
+    second: Mario's Useful_31
+  - first:
+      213: 6346269743148827607
+    second: Mario's Useful_32
+  - first:
+      213: 1296783901037966421
+    second: Mario's Useful_33
+  - first:
+      213: -1220212453014856918
+    second: Mario's Useful_34
+  - first:
+      213: 4206951132957630363
+    second: Mario's Useful_35
+  - first:
+      213: 3689944044516815105
+    second: Mario's Useful_36
+  - first:
+      213: -4688512425208319440
+    second: Mario's Useful_37
+  - first:
+      213: 5740005210920928392
+    second: Mario's Useful_38
+  - first:
+      213: 3919436284263520191
+    second: Mario's Useful_39
+  - first:
+      213: -2323364600855534920
+    second: Mario's Useful_40
+  - first:
+      213: 1719638198378215012
+    second: Mario's Useful_41
+  - first:
+      213: 2991162611009748149
+    second: Mario's Useful_42
+  - first:
+      213: 8363828648232447756
+    second: Mario's Useful_43
+  - first:
+      213: -5347335543935788792
+    second: Mario's Useful_44
+  - first:
+      213: -6481903611571890418
+    second: Mario's Useful_45
+  - first:
+      213: 4702725747736953165
+    second: Mario's Useful_46
+  - first:
+      213: -8776889683779891191
+    second: Mario's Useful_47
+  - first:
+      213: 3172283560227946734
+    second: Mario's Useful_48
+  - first:
+      213: -8837359916694292025
+    second: Mario's Useful_49
+  - first:
+      213: -1173266468037528216
+    second: Mario's Useful_50
+  - first:
+      213: -6755185551395942906
+    second: Mario's Useful_51
+  - first:
+      213: 907721546407820303
+    second: Mario's Useful_52
+  - first:
+      213: 7453422803537673318
+    second: Mario's Useful_53
+  - first:
+      213: -2109314087951299255
+    second: Mario's Useful_54
+  - first:
+      213: 7072116154129379285
+    second: Mario's Useful_55
+  - first:
+      213: -6451425221205144567
+    second: Mario's Useful_56
+  - first:
+      213: 3809966908160530237
+    second: Mario's Useful_57
+  - first:
+      213: -1864988465779189271
+    second: Mario's Useful_58
+  - first:
+      213: -1328383053082354223
+    second: Mario's Useful_59
+  - first:
+      213: 1023961132744212065
+    second: Mario's Useful_60
+  - first:
+      213: 1742304855084991956
+    second: Mario's Useful_61
+  - first:
+      213: 8024083770593529966
+    second: Mario's Useful_62
+  - first:
+      213: -8878373420018020906
+    second: Mario's Useful_63
+  - first:
+      213: 1442637978679771666
+    second: Mario's Useful_64
+  - first:
+      213: -8732371283977781195
+    second: Mario's Useful_65
+  - first:
+      213: -2615250009439554328
+    second: Mario's Useful_66
+  - first:
+      213: -2330803835807969959
+    second: Mario's Useful_67
+  - first:
+      213: -7313461132323972004
+    second: Mario's Useful_68
+  - first:
+      213: 5602131025488872913
+    second: Mario's Useful_69
+  - first:
+      213: -8683570716110727609
+    second: Mario's Useful_70
+  - first:
+      213: 3699528808105552568
+    second: Mario's Useful_71
+  - first:
+      213: -4821155944525552135
+    second: Mario's Useful_72
+  - first:
+      213: 6155337972502648665
+    second: Mario's Useful_73
+  - first:
+      213: -4350089081874052919
+    second: Mario's Useful_74
+  - first:
+      213: 1392376325935309803
+    second: Mario's Useful_75
+  - first:
+      213: 4450851452931561935
+    second: Mario's Useful_76
+  - first:
+      213: 2416654136796691257
+    second: Mario's Useful_77
+  - first:
+      213: -171922143838279834
+    second: Mario's Useful_78
+  - first:
+      213: 6096370075480636672
+    second: Mario's Useful_79
+  - first:
+      213: 99903325951104581
+    second: Mario's Useful_80
+  - first:
+      213: -1363257692377975806
+    second: Mario's Useful_81
+  - first:
+      213: -2640163205714158969
+    second: Mario's Useful_82
+  - first:
+      213: -2659748552339978461
+    second: Mario's Useful_83
+  - first:
+      213: -6876385376368784802
+    second: Mario's Useful_84
+  - first:
+      213: 561195526666143554
+    second: Mario's Useful_85
+  - first:
+      213: -2415138123888576696
+    second: Mario's Useful_86
+  - first:
+      213: 6644716056010961731
+    second: Mario's Useful_87
+  - first:
+      213: -5859935259695191411
+    second: Mario's Useful_88
+  - first:
+      213: -4133650372164624441
+    second: Mario's Useful_89
+  - first:
+      213: -4332039320962062124
+    second: Mario's Useful_90
+  - first:
+      213: -6133974978215523259
+    second: Mario's Useful_91
+  - first:
+      213: -9052531858513820850
+    second: Mario's Useful_92
+  - first:
+      213: -1434808885395650026
+    second: Mario's Useful_93
+  - first:
+      213: 6684955984569561748
+    second: Mario's Useful_94
+  - first:
+      213: 5059605944044977233
+    second: Mario's Useful_95
+  - first:
+      213: -5213999065232658220
+    second: Mario's Useful_96
+  - first:
+      213: -1115724378172723282
+    second: Mario's Useful_97
+  - first:
+      213: 3611809866443180514
+    second: Mario's Useful_98
+  - first:
+      213: -5606603960336195598
+    second: Mario's Useful_99
+  - first:
+      213: -2442585568340978845
+    second: Mario's Useful_100
+  - first:
+      213: 129094175552514711
+    second: Mario's Useful_101
+  - first:
+      213: 5494214103294087352
+    second: Mario's Useful_102
+  - first:
+      213: 2438668833257454551
+    second: Mario's Useful_103
+  - first:
+      213: 6644420287163440161
+    second: Mario's Useful_104
+  - first:
+      213: 1254456199130986320
+    second: Mario's Useful_105
+  - first:
+      213: 1588361114382429610
+    second: Mario's Useful_106
+  - first:
+      213: -4024125961870870832
+    second: Mario's Useful_107
+  - first:
+      213: 6036653016374491136
+    second: Mario's Useful_108
+  - first:
+      213: -4063630494698720926
+    second: Mario's Useful_109
+  - first:
+      213: 2281433735449061526
+    second: Mario's Useful_110
+  - first:
+      213: -7431437525989918486
+    second: Mario's Useful_111
+  - first:
+      213: 8253688988448199905
+    second: Mario's Useful_112
+  - first:
+      213: -2294988863744555718
+    second: Mario's Useful_113
+  - first:
+      213: 3858786714398522116
+    second: Mario's Useful_114
+  - first:
+      213: -6125602229017921092
+    second: Mario's Useful_115
+  - first:
+      213: 2597658153867402257
+    second: Mario's Useful_116
+  - first:
+      213: 8139252877815637868
+    second: Mario's Useful_117
+  - first:
+      213: -6055823027764853451
+    second: Mario's Useful_118
+  - first:
+      213: -2338258608015345678
+    second: Mario's Useful_119
+  - first:
+      213: -2112782872967284058
+    second: Mario's Useful_120
+  - first:
+      213: -6948131175594857109
+    second: Mario's Useful_121
+  - first:
+      213: 6305271433619083258
+    second: Mario's Useful_122
+  - first:
+      213: -3892436285944510315
+    second: Mario's Useful_123
+  - first:
+      213: -1379211913258980554
+    second: Mario's Useful_124
+  - first:
+      213: 5846058546665271925
+    second: Mario's Useful_125
+  - first:
+      213: -4030191354074846145
+    second: Mario's Useful_126
+  - first:
+      213: -8940101885158774525
+    second: Mario's Useful_127
+  - first:
+      213: -7896188975164584830
+    second: Mario's Useful_128
+  - first:
+      213: -4945616529213584320
+    second: Mario's Useful_129
+  - first:
+      213: -7774522855288776874
+    second: Mario's Useful_130
+  - first:
+      213: -632351312367605892
+    second: Mario's Useful_131
+  - first:
+      213: -5948366252847639960
+    second: Mario's Useful_132
+  - first:
+      213: 846675354986460186
+    second: Mario's Useful_133
+  - first:
+      213: 556676824671002094
+    second: Mario's Useful_134
+  - first:
+      213: 6676298745683998112
+    second: Mario's Useful_135
+  - first:
+      213: -8377184953353368084
+    second: Mario's Useful_136
+  - first:
+      213: -1731852601561394770
+    second: Mario's Useful_137
+  - first:
+      213: -6205426910809289619
+    second: Mario's Useful_138
+  - first:
+      213: -8169589923999058790
+    second: Mario's Useful_139
+  - first:
+      213: 8126648246297772731
+    second: Mario's Useful_140
+  - first:
+      213: -3015116379366130962
+    second: Mario's Useful_141
+  - first:
+      213: -8662103231094112017
+    second: Mario's Useful_142
+  - first:
+      213: -7766547987472864781
+    second: Mario's Useful_143
+  - first:
+      213: -443381757760716198
+    second: Mario's Useful_144
+  - first:
+      213: 7003050292933797303
+    second: Mario's Useful_145
+  - first:
+      213: 8251508644083223396
+    second: Mario's Useful_146
+  - first:
+      213: 1187144922991759312
+    second: Mario's Useful_147
+  - first:
+      213: 3968946462212706245
+    second: Mario's Useful_148
+  - first:
+      213: -1728716867741440455
+    second: Mario's Useful_149
+  - first:
+      213: 109963207373704707
+    second: Mario's Useful_150
+  - first:
+      213: 1043514508904686190
+    second: Mario's Useful_151
+  - first:
+      213: 6414769036474944222
+    second: Mario's Useful_152
+  - first:
+      213: 7629322723628460983
+    second: Mario's Useful_153
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mario's Useful_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 229
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8682ad1ec422c14a0800000000000000
+      internalID: -6621379638539442072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 229
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d65b1a68911f690800000000000000
+      internalID: -7570241432603759255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 229
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c20db87ae8db670800000000000000
+      internalID: 8556151717330168900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_3
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 229
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3db01ce1dc5f64f0800000000000000
+      internalID: -833345349361812164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_4
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 229
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56fea1f249d38d20800000000000000
+      internalID: 3279703835201697370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a530ef02b38dcabd0800000000000000
+      internalID: -2617479534940912806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_6
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 231
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ea1ce5f6cb7cf30800000000000000
+      internalID: 4595849131272023601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 229
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26cd8ed77d5c5c6c0800000000000000
+      internalID: -4123672354466767774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_8
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 229
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e643690a209b5f680800000000000000
+      internalID: -8721861682397825938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e68b7bdc71668830800000000000000
+      internalID: 4073050101889337064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 229
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45665f9136af80d20800000000000000
+      internalID: 3245118835064661588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 229
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d810e5d84e80ca20800000000000000
+      internalID: 3080618588598442200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_12
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 229
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18eb923f2e028db40800000000000000
+      internalID: 5465154306928393857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_13
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 229
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd07ac147a54c4aa0800000000000000
+      internalID: -6175484404366151457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_14
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 229
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e696a517b6266590800000000000000
+      internalID: -7681409546649692447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ead8bd71c84726d0800000000000000
+      internalID: -3015361429626103070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_16
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 231
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dca421388d515850800000000000000
+      internalID: 6363970587972644053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_17
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 229
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7209909c222db3cf0800000000000000
+      internalID: -271392305682214873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_18
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 229
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d549db1890b4a4520800000000000000
+      internalID: 2687042631883396189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 196
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742215167d93cfa20800000000000000
+      internalID: 3097414240937517639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_20
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 196
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a504a3443628562e0800000000000000
+      internalID: -2133155485632020390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_21
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 196
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b2f8dfa66a214d0800000000000000
+      internalID: -3165284609637274748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_22
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 196
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb5d0ad27cfbd1520800000000000000
+      internalID: 2674504615912854972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_23
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 196
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb53c4f1a925b8c0800000000000000
+      internalID: -3984232519766418511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_24
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 196
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecdc5e0b89847d680800000000000000
+      internalID: -8730429531994337842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 196
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b997cf634e591ec0800000000000000
+      internalID: -3595739183747458636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_26
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 196
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d3dd276e0d677c0800000000000000
+      internalID: -4073839124721877745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_27
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 196
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88dfd46d837eff20800000000000000
+      internalID: 3458328614987094158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_28
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 196
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eae07478ce3c2e90800000000000000
+      internalID: -7049190286073730331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_29
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 196
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9789c3c99f147cc70800000000000000
+      internalID: 8991227721392363641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_30
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 196
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e00fe1ee786db4a0800000000000000
+      internalID: -6575984986725351198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_31
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 196
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e6aa25549de5c10800000000000000
+      internalID: 2044310172635655795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_32
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 196
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3023915ba721850800000000000000
+      internalID: 6346269743148827607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_33
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 196
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55430db561a1ff110800000000000000
+      internalID: 1296783901037966421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_34
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 196
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b9a8b2d3fe01fe0800000000000000
+      internalID: -1220212453014856918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_35
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 196
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9fdd5b14c7126a30800000000000000
+      internalID: 4206951132957630363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_36
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 196
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1013e7eee80553330800000000000000
+      internalID: 3689944044516815105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_37
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 165
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032f3724ace0feeb0800000000000000
+      internalID: -4688512425208319440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_38
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 165
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88445d5d35898af40800000000000000
+      internalID: 5740005210920928392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_39
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 165
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7dd43d882a46630800000000000000
+      internalID: 3919436284263520191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_40
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 165
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2e94a8430c1cfd0800000000000000
+      internalID: -2323364600855534920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_41
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 165
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 466b68494d16dd710800000000000000
+      internalID: 1719638198378215012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_42
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 165
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc7aaefb8eb28920800000000000000
+      internalID: 2991162611009748149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_43
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 171
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f612497d9421470800000000000000
+      internalID: 8363828648232447756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_44
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 187
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80913e877a27ac5b0800000000000000
+      internalID: -5347335543935788792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_45
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 187
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e079fe30207ab06a0800000000000000
+      internalID: -6481903611571890418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_46
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 165
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d41c1f5c620734140800000000000000
+      internalID: 4702725747736953165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_47
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 165
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9005285a559323680800000000000000
+      internalID: -8776889683779891191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_48
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 165
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0c23e2717360c20800000000000000
+      internalID: 3172283560227946734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_49
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 165
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c939256af36b5580800000000000000
+      internalID: -8837359916694292025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_50
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 165
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865feb11d58b7bfe0800000000000000
+      internalID: -1173266468037528216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_51
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 165
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e81311882c042a0800000000000000
+      internalID: -6755185551395942906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_52
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 171
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c3b98efefd89c00800000000000000
+      internalID: 907721546407820303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_53
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 172
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66cb8a5cc80ef6760800000000000000
+      internalID: 7453422803537673318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_54
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 147
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d8feb33063ab2e0800000000000000
+      internalID: -2109314087951299255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_55
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 147
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfee292c24352260800000000000000
+      internalID: 7072116154129379285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_56
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 147
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c421341fee776a0800000000000000
+      internalID: -6451425221205144567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_57
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 147
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37d6e687b8bfd430800000000000000
+      internalID: 3809966908160530237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_58
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 147
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9d70b1fda3e16e0800000000000000
+      internalID: -1864988465779189271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_59
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd906bb6a2a09de0800000000000000
+      internalID: -1328383053082354223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_60
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 149
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e760d9937d53e00800000000000000
+      internalID: 1023961132744212065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_61
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 147
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d587c9d809ed2810800000000000000
+      internalID: 1742304855084991956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_62
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 147
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60543a0da54b5f60800000000000000
+      internalID: 8024083770593529966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_63
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 147
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd4e840a6ea9c480800000000000000
+      internalID: -8878373420018020906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_64
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 147
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21202b22997450410800000000000000
+      internalID: 1442637978679771666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_65
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 147
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530cea3559260d680800000000000000
+      internalID: -8732371283977781195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_66
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 147
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4b48cf8f3c4bbd0800000000000000
+      internalID: -2615250009439554328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_67
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 147
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d4c8da24257afd0800000000000000
+      internalID: -2330803835807969959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_68
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c143939dd518a90800000000000000
+      internalID: -7313461132323972004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_69
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 149
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5857f7c74cebd40800000000000000
+      internalID: 5602131025488872913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_70
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 147
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7465c34f072cd7780800000000000000
+      internalID: -8683570716110727609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_71
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 147
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8baa47b99dd575330800000000000000
+      internalID: 3699528808105552568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_72
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 114
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5aac74630d71db0800000000000000
+      internalID: -4821155944525552135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_73
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 114
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9575e7b06472c6550800000000000000
+      internalID: 6155337972502648665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_74
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 114
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8879d170161a3c0800000000000000
+      internalID: -4350089081874052919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_75
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 114
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3a90d24e6b25310800000000000000
+      internalID: 1392376325935309803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_76
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 114
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9540890d994cd30800000000000000
+      internalID: 4450851452931561935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_77
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 114
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93bbeb8222ea98120800000000000000
+      internalID: 2416654136796691257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_78
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 114
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667ee7798b53d9df0800000000000000
+      internalID: -171922143838279834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_79
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 114
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d3850a848aa9450800000000000000
+      internalID: 6096370075480636672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_80
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 114
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546123fab8de26100800000000000000
+      internalID: 99903325951104581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_81
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 114
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204fd740a5cb41de0800000000000000
+      internalID: -1363257692377975806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_82
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 114
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ad9567d814c5bd0800000000000000
+      internalID: -2640163205714158969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_83
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 114
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3278ae998cca61bd0800000000000000
+      internalID: -2659748552339978461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_84
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 114
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a09deceeb2290a0800000000000000
+      internalID: -6876385376368784802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_85
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 114
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2474970bb54c9c700800000000000000
+      internalID: 561195526666143554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_86
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 114
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8473e1a1ca4bb7ed0800000000000000
+      internalID: -2415138123888576696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_87
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 114
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3433ed73c06c63c50800000000000000
+      internalID: 6644716056010961731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_88
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 114
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ae417bde35daea0800000000000000
+      internalID: -5859935259695191411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_89
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 114
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf577533e252a6c0800000000000000
+      internalID: -4133650372164624441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_90
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 83
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d82801903181e3c0800000000000000
+      internalID: -4332039320962062124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_91
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 83
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c445aa14ebfdaa0800000000000000
+      internalID: -6133974978215523259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_92
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 83
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43806fac32fe5280800000000000000
+      internalID: -9052531858513820850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_93
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 83
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a0b61bbe8861ce0800000000000000
+      internalID: -1434808885395650026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_94
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 83
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492f36fac0cb5cc50800000000000000
+      internalID: 6684955984569561748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_95
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 83
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c71469cc4573640800000000000000
+      internalID: 5059605944044977233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_96
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 89
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0b691a97724a7b0800000000000000
+      internalID: -5213999065232658220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_97
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 83
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaf65c3e6962480f0800000000000000
+      internalID: -1115724378172723282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_98
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 83
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9c895ffe9bf1230800000000000000
+      internalID: 3611809866443180514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_99
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 83
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ffdcd337675132b0800000000000000
+      internalID: -5606603960336195598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_100
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 83
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3635a81fd513a1ed0800000000000000
+      internalID: -2442585568340978845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_101
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 83
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a216cf772aac100800000000000000
+      internalID: 129094175552514711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_102
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 83
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b019ca0e9e5f3c40800000000000000
+      internalID: 5494214103294087352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_103
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 89
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db702b1264e7d120800000000000000
+      internalID: 2438668833257454551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_104
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 65
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c96ca2c09b53c50800000000000000
+      internalID: 6644420287163440161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_105
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 65
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0573d774449b86110800000000000000
+      internalID: 1254456199130986320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_106
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 65
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aadeecd940efa0610800000000000000
+      internalID: 1588361114382429610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_107
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 65
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6724722ce6728c0800000000000000
+      internalID: -4024125961870870832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_108
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 65
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008ba415fef76c350800000000000000
+      internalID: 6036653016374491136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_109
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261b90958951b97c0800000000000000
+      internalID: -4063630494698720926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_110
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 67
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698a80415e749af10800000000000000
+      internalID: 2281433735449061526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_111
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 65
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8fcdc81fa3ed890800000000000000
+      internalID: -7431437525989918486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_112
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 65
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e41203b76efa8270800000000000000
+      internalID: 8253688988448199905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_113
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 65
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35470da9cf8620e0800000000000000
+      internalID: -2294988863744555718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_114
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 65
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b78bf621a2d8530800000000000000
+      internalID: 3858786714398522116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_115
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 65
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9bb004a3d7dfaa0800000000000000
+      internalID: -6125602229017921092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_116
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 65
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11cd925f35cbc0420800000000000000
+      internalID: 2597658153867402257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_117
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 65
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67e6476e5f64f070800000000000000
+      internalID: 8139252877815637868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_118
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53502779a0565fba0800000000000000
+      internalID: -6055823027764853451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_119
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 67
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7fe344f26dc8fd0800000000000000
+      internalID: -2338258608015345678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_120
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 65
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa7149cb23eda2e0800000000000000
+      internalID: -2112782872967284058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_121
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 65
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6de9d13287439f90800000000000000
+      internalID: -6948131175594857109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_122
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff884d46f2d08750800000000000000
+      internalID: 6305271433619083258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_123
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 32
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598cf6922d94bf9c0800000000000000
+      internalID: -3892436285944510315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_124
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 32
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b2630821e0cdce0800000000000000
+      internalID: -1379211913258980554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_125
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572be12464f512150800000000000000
+      internalID: 5846058546665271925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_126
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ca48bf052e118c0800000000000000
+      internalID: -4030191354074846145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_127
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309af4fb3b06ee380800000000000000
+      internalID: -8940101885158774525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_128
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 32
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c85ff76f91b6290800000000000000
+      internalID: -7896188975164584830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_129
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 32
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c8cec38f3ad5bb0800000000000000
+      internalID: -4945616529213584320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_130
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 32
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6575b5087a85b1490800000000000000
+      internalID: -7774522855288776874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_131
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77a31de4df6937f0800000000000000
+      internalID: -632351312367605892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_132
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 32
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8625819a868237da0800000000000000
+      internalID: -5948366252847639960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_133
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 32
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14bb0edfbeffbb00800000000000000
+      internalID: 846675354986460186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_134
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed15356f96b9b700800000000000000
+      internalID: 556676824671002094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_135
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a571ee265af6ac50800000000000000
+      internalID: 6676298745683998112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_136
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced00ad4ba24ebb80800000000000000
+      internalID: -8377184953353368084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_137
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 32
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1d8901c3937f7e0800000000000000
+      internalID: -1731852601561394770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_138
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 32
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c00953a15e1e9a0800000000000000
+      internalID: -6205426910809289619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_139
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 32
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94fc6b9f39cf9e80800000000000000
+      internalID: -8169589923999058790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_140
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb2412fe587a7c070800000000000000
+      internalID: 8126648246297772731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_141
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea7b63b0a72826d0800000000000000
+      internalID: -3015116379366130962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_142
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe04fde41070ac780800000000000000
+      internalID: -8662103231094112017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_143
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9a7ab11cda73490800000000000000
+      internalID: -7766547987472864781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_144
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52c8c4f3aac8d9f0800000000000000
+      internalID: -443381757760716198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_145
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5a38e3325df2160800000000000000
+      internalID: 7003050292933797303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_146
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 7
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b45a7b46f338270800000000000000
+      internalID: 8251508644083223396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_147
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df05d78406997010800000000000000
+      internalID: 1187144922991759312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_148
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf4bbc67c7841730800000000000000
+      internalID: 3968946462212706245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_149
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936ab0dfa2d5208e0800000000000000
+      internalID: -1728716867741440455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_150
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e4fd954faa68100800000000000000
+      internalID: 109963207373704707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_151
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62ea35caee4b7e00800000000000000
+      internalID: 1043514508904686190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_152
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda8347a376d50950800000000000000
+      internalID: 6414769036474944222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario's Useful_153
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 7
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bba0b2689cc0e960800000000000000
+      internalID: 7629322723628460983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 15637596dfbb67648bc991ed48cae916
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mario's Useful_0: -6621379638539442072
+      Mario's Useful_1: -7570241432603759255
+      Mario's Useful_10: 3245118835064661588
+      Mario's Useful_100: -2442585568340978845
+      Mario's Useful_101: 129094175552514711
+      Mario's Useful_102: 5494214103294087352
+      Mario's Useful_103: 2438668833257454551
+      Mario's Useful_104: 6644420287163440161
+      Mario's Useful_105: 1254456199130986320
+      Mario's Useful_106: 1588361114382429610
+      Mario's Useful_107: -4024125961870870832
+      Mario's Useful_108: 6036653016374491136
+      Mario's Useful_109: -4063630494698720926
+      Mario's Useful_11: 3080618588598442200
+      Mario's Useful_110: 2281433735449061526
+      Mario's Useful_111: -7431437525989918486
+      Mario's Useful_112: 8253688988448199905
+      Mario's Useful_113: -2294988863744555718
+      Mario's Useful_114: 3858786714398522116
+      Mario's Useful_115: -6125602229017921092
+      Mario's Useful_116: 2597658153867402257
+      Mario's Useful_117: 8139252877815637868
+      Mario's Useful_118: -6055823027764853451
+      Mario's Useful_119: -2338258608015345678
+      Mario's Useful_12: 5465154306928393857
+      Mario's Useful_120: -2112782872967284058
+      Mario's Useful_121: -6948131175594857109
+      Mario's Useful_122: 6305271433619083258
+      Mario's Useful_123: -3892436285944510315
+      Mario's Useful_124: -1379211913258980554
+      Mario's Useful_125: 5846058546665271925
+      Mario's Useful_126: -4030191354074846145
+      Mario's Useful_127: -8940101885158774525
+      Mario's Useful_128: -7896188975164584830
+      Mario's Useful_129: -4945616529213584320
+      Mario's Useful_13: -6175484404366151457
+      Mario's Useful_130: -7774522855288776874
+      Mario's Useful_131: -632351312367605892
+      Mario's Useful_132: -5948366252847639960
+      Mario's Useful_133: 846675354986460186
+      Mario's Useful_134: 556676824671002094
+      Mario's Useful_135: 6676298745683998112
+      Mario's Useful_136: -8377184953353368084
+      Mario's Useful_137: -1731852601561394770
+      Mario's Useful_138: -6205426910809289619
+      Mario's Useful_139: -8169589923999058790
+      Mario's Useful_14: -7681409546649692447
+      Mario's Useful_140: 8126648246297772731
+      Mario's Useful_141: -3015116379366130962
+      Mario's Useful_142: -8662103231094112017
+      Mario's Useful_143: -7766547987472864781
+      Mario's Useful_144: -443381757760716198
+      Mario's Useful_145: 7003050292933797303
+      Mario's Useful_146: 8251508644083223396
+      Mario's Useful_147: 1187144922991759312
+      Mario's Useful_148: 3968946462212706245
+      Mario's Useful_149: -1728716867741440455
+      Mario's Useful_15: -3015361429626103070
+      Mario's Useful_150: 109963207373704707
+      Mario's Useful_151: 1043514508904686190
+      Mario's Useful_152: 6414769036474944222
+      Mario's Useful_153: 7629322723628460983
+      Mario's Useful_16: 6363970587972644053
+      Mario's Useful_17: -271392305682214873
+      Mario's Useful_18: 2687042631883396189
+      Mario's Useful_19: 3097414240937517639
+      Mario's Useful_2: 8556151717330168900
+      Mario's Useful_20: -2133155485632020390
+      Mario's Useful_21: -3165284609637274748
+      Mario's Useful_22: 2674504615912854972
+      Mario's Useful_23: -3984232519766418511
+      Mario's Useful_24: -8730429531994337842
+      Mario's Useful_25: -3595739183747458636
+      Mario's Useful_26: -4073839124721877745
+      Mario's Useful_27: 3458328614987094158
+      Mario's Useful_28: -7049190286073730331
+      Mario's Useful_29: 8991227721392363641
+      Mario's Useful_3: -833345349361812164
+      Mario's Useful_30: -6575984986725351198
+      Mario's Useful_31: 2044310172635655795
+      Mario's Useful_32: 6346269743148827607
+      Mario's Useful_33: 1296783901037966421
+      Mario's Useful_34: -1220212453014856918
+      Mario's Useful_35: 4206951132957630363
+      Mario's Useful_36: 3689944044516815105
+      Mario's Useful_37: -4688512425208319440
+      Mario's Useful_38: 5740005210920928392
+      Mario's Useful_39: 3919436284263520191
+      Mario's Useful_4: 3279703835201697370
+      Mario's Useful_40: -2323364600855534920
+      Mario's Useful_41: 1719638198378215012
+      Mario's Useful_42: 2991162611009748149
+      Mario's Useful_43: 8363828648232447756
+      Mario's Useful_44: -5347335543935788792
+      Mario's Useful_45: -6481903611571890418
+      Mario's Useful_46: 4702725747736953165
+      Mario's Useful_47: -8776889683779891191
+      Mario's Useful_48: 3172283560227946734
+      Mario's Useful_49: -8837359916694292025
+      Mario's Useful_5: -2617479534940912806
+      Mario's Useful_50: -1173266468037528216
+      Mario's Useful_51: -6755185551395942906
+      Mario's Useful_52: 907721546407820303
+      Mario's Useful_53: 7453422803537673318
+      Mario's Useful_54: -2109314087951299255
+      Mario's Useful_55: 7072116154129379285
+      Mario's Useful_56: -6451425221205144567
+      Mario's Useful_57: 3809966908160530237
+      Mario's Useful_58: -1864988465779189271
+      Mario's Useful_59: -1328383053082354223
+      Mario's Useful_6: 4595849131272023601
+      Mario's Useful_60: 1023961132744212065
+      Mario's Useful_61: 1742304855084991956
+      Mario's Useful_62: 8024083770593529966
+      Mario's Useful_63: -8878373420018020906
+      Mario's Useful_64: 1442637978679771666
+      Mario's Useful_65: -8732371283977781195
+      Mario's Useful_66: -2615250009439554328
+      Mario's Useful_67: -2330803835807969959
+      Mario's Useful_68: -7313461132323972004
+      Mario's Useful_69: 5602131025488872913
+      Mario's Useful_7: -4123672354466767774
+      Mario's Useful_70: -8683570716110727609
+      Mario's Useful_71: 3699528808105552568
+      Mario's Useful_72: -4821155944525552135
+      Mario's Useful_73: 6155337972502648665
+      Mario's Useful_74: -4350089081874052919
+      Mario's Useful_75: 1392376325935309803
+      Mario's Useful_76: 4450851452931561935
+      Mario's Useful_77: 2416654136796691257
+      Mario's Useful_78: -171922143838279834
+      Mario's Useful_79: 6096370075480636672
+      Mario's Useful_8: -8721861682397825938
+      Mario's Useful_80: 99903325951104581
+      Mario's Useful_81: -1363257692377975806
+      Mario's Useful_82: -2640163205714158969
+      Mario's Useful_83: -2659748552339978461
+      Mario's Useful_84: -6876385376368784802
+      Mario's Useful_85: 561195526666143554
+      Mario's Useful_86: -2415138123888576696
+      Mario's Useful_87: 6644716056010961731
+      Mario's Useful_88: -5859935259695191411
+      Mario's Useful_89: -4133650372164624441
+      Mario's Useful_9: 4073050101889337064
+      Mario's Useful_90: -4332039320962062124
+      Mario's Useful_91: -6133974978215523259
+      Mario's Useful_92: -9052531858513820850
+      Mario's Useful_93: -1434808885395650026
+      Mario's Useful_94: 6684955984569561748
+      Mario's Useful_95: 5059605944044977233
+      Mario's Useful_96: -5213999065232658220
+      Mario's Useful_97: -1115724378172723282
+      Mario's Useful_98: 3611809866443180514
+      Mario's Useful_99: -5606603960336195598
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

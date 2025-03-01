@@ -5,8 +5,8 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
-    public Sound[] musicSounds, sfxSounds;
-    public AudioSource musicSource, sfxSource;
+    public Sound[] musicSounds, sfxSounds, conditionSounds;
+    public AudioSource musicSource, sfxSource, conditionSource;
 
     private void Awake()
     {
@@ -50,4 +50,19 @@ public class AudioManager : MonoBehaviour
            sfxSource.PlayOneShot(s.clip);
         }
     }
+
+      public void PlayConditionSound(string name)
+{
+    Sound s = Array.Find(conditionSounds, x => x.name == name);
+
+    if (s == null)
+    {
+        Debug.Log("sound not found");
+    }
+    else
+    {
+        conditionSource.PlayOneShot(s.clip);
+    }
+}
+
 }
