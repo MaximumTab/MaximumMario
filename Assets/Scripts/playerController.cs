@@ -229,6 +229,10 @@ public class PlayerController : MonoBehaviour
             transform.position = pipeDestination.position;
         }
 
+         // Switch the camera to underground after the pipe cutscene finishes
+        FindObjectOfType<SideScrolling>().SetUnderground(true);
+
+
         // Restore collisions & sprite order
         playerCollider.enabled = true;
         if (playerSprite != null) playerSprite.sortingOrder = originalSortingOrder;
