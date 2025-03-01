@@ -23,6 +23,10 @@ public class BricksLogic : MonoBehaviour
     {
         BrickAnim = GetComponent<Animator>();
         BrickAnim.SetBool("Lucky",Lucky);
+        if (Invisible)
+        {
+            gameObject.GetComponent<SpriteRenderer>().enabled=false;
+        }
     }
 
     // Update is called once per frame
@@ -45,6 +49,7 @@ public class BricksLogic : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        gameObject.GetComponent<SpriteRenderer>().enabled=true;
         if (Hp > 0)
         {
             if(!Smash)
