@@ -4,9 +4,10 @@ using System.Collections;
 public class Flagpole : MonoBehaviour
 {
     [SerializeField] private float slideSpeed = 3f;            // Speed of sliding down the pole
-    [SerializeField] private Transform slideBottomPosition;      // Bottom position of the flagpole
-    [SerializeField] private float hopForceY = 5f;                 // Vertical hop force
-    [SerializeField] private Transform hidePoint;                // Point where the player stops and hides
+    [SerializeField] private Transform slideBottomPosition;    // Bottom position of the flagpole
+    [SerializeField] private float hopForceY = 5f;             // Vertical hop force
+    [SerializeField] private Transform hidePoint;              // Point where the player stops and hides
+    [SerializeField] private Transform flagSpriteTransform;    // Flag sprite that moves down
 
     private bool flagpoleSequenceActive = false;
     private Rigidbody2D playerRb;
@@ -40,11 +41,10 @@ public class Flagpole : MonoBehaviour
             
             if (playerRb != null)
             {
-
                 playerRb.linearVelocity = Vector2.zero;
                 playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
-            
+
             StartCoroutine(FlagpoleSequence());
         }
     }
@@ -58,34 +58,30 @@ public class Flagpole : MonoBehaviour
         
         AudioManager.Instance.PlaySFX("Flagpole");
 
-        // Slide down the pole while maintaining X position
         float currentX = playerTransform.position.x;
-        while (playerTransform.position.y > slideBottomPosition.position.y)
-        {
-            playerTransform.position = new Vector3(
-                currentX,
-                Mathf.MoveTowards(playerTransform.position.y, slideBottomPosition.position.y, slideSpeed * Time.deltaTime),
-                playerTransform.position.z
-            );
-            yield return null;
-        }
+        bool playerReachedBottom = false;
+        bool flagReachedBottom = false;
 
-        yield return new WaitForSeconds(.5f);
-        
-        // Snap to exact bottom position
-        playerTransform.position = new Vector3(
-            slideBottomPosition.position.x,
-            slideBottomPosition.position.y,
-            playerTransform.position.z
-        );
+        // Start both the player and flag movement at the same time
+        StartCoroutine(MoveFlagDown(() => flagReachedBottom = true));
+        StartCoroutine(MovePlayerDown(currentX, () => playerReachedBottom = true));
 
-        yield return new WaitForSeconds(.25f);
+        // Wait until both player and flag have reached the bottom
+        yield return new WaitUntil(() => playerReachedBottom && flagReachedBottom);
+
+        yield return new WaitForSeconds(0.5f);
+
+        // Snap player to exact bottom position
+        playerTransform.position = new Vector3(slideBottomPosition.position.x, slideBottomPosition.position.y, playerTransform.position.z);
+
+        yield return new WaitForSeconds(0.25f);
 
         AudioManager.Instance.PlayConditionSound("LevelClear");
 
+        // Now hop off
         playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
         playerRb.gravityScale = 1f;
-        playerRb.linearVelocity = Vector2.zero; 
+        playerRb.linearVelocity = Vector2.zero;
         playerRb.AddForce(new Vector2(0, hopForceY), ForceMode2D.Impulse);
 
         // Start pushing the player right continuously
@@ -106,11 +102,43 @@ public class Flagpole : MonoBehaviour
         timeManager?.ConvertTimeToScore();
     }
 
+    private IEnumerator MoveFlagDown(System.Action flagDoneCallback)
+    {
+        float flagEndY = slideBottomPosition.position.y;
+
+        while (flagSpriteTransform.position.y > flagEndY)
+        {
+            flagSpriteTransform.position = new Vector3(
+                flagSpriteTransform.position.x,
+                Mathf.MoveTowards(flagSpriteTransform.position.y, flagEndY, slideSpeed * Time.deltaTime),
+                flagSpriteTransform.position.z
+            );
+            yield return null;
+        }
+
+        flagDoneCallback.Invoke();
+    }
+
+    private IEnumerator MovePlayerDown(float currentX, System.Action playerDoneCallback)
+    {
+        while (playerTransform.position.y > slideBottomPosition.position.y)
+        {
+            playerTransform.position = new Vector3(
+                currentX,
+                Mathf.MoveTowards(playerTransform.position.y, slideBottomPosition.position.y, slideSpeed * Time.deltaTime),
+                playerTransform.position.z
+            );
+            yield return null;
+        }
+
+        playerDoneCallback.Invoke();
+    }
+
     private IEnumerator PushPlayerRight()
     {
         while (true)
         {
-            playerRb.AddForce(Vector2.right * 5f, ForceMode2D.Force); 
+            playerRb.AddForce(Vector2.right * 15f, ForceMode2D.Force);
             yield return null;
         }
     }
