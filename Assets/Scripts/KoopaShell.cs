@@ -12,11 +12,13 @@ public class KoopaShell : MonoBehaviour
     public float playerBounceForce = 5f;
 
     public Sprite wakeUpSprite;
+    public Sprite originalSprite;
     public GameObject aliveKoopaPrefab;
 
     private SpriteRenderer spriteRenderer;
     private Collider2D col;
     private bool isRespawning = false;
+    private Coroutine respawnCoroutine = null;
 
     void Start()
     {
@@ -25,11 +27,13 @@ public class KoopaShell : MonoBehaviour
         col = GetComponent<Collider2D>();
 
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
-        rb.sharedMaterial = new PhysicsMaterial2D { friction = 0f, bounciness = 0f }; // Prevents sticking
+        rb.sharedMaterial = new PhysicsMaterial2D { friction = 0f, bounciness = 0f };
 
         rb.linearVelocity = Vector2.zero;
 
-        StartCoroutine(WakeUpAndRespawnSequence());
+        originalSprite = spriteRenderer.sprite;
+
+        respawnCoroutine = StartCoroutine(WakeUpAndRespawnSequence());
     }
 
     void FixedUpdate()
@@ -93,6 +97,10 @@ public class KoopaShell : MonoBehaviour
                 }
             }
         }
+        else if (other.CompareTag("Enemy")) // Prevent Goombas from pushing shells
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
     }
 
     void Stomped(GameObject player)
@@ -127,18 +135,33 @@ public class KoopaShell : MonoBehaviour
         direction = kickDirection != 0 ? kickDirection : (player.transform.position.x > transform.position.x ? 1 : -1);
         rb.linearVelocity = new Vector2(direction * shellSpeed, 0);
 
+        spriteRenderer.sprite = originalSprite;
+
+        if (respawnCoroutine != null)
+        {
+            StopCoroutine(respawnCoroutine); // Stop respawn countdown if kicked
+            respawnCoroutine = null;
+        }
+
         Debug.Log("Shell kicked!");
     }
 
     void StopShell()
     {
         isKicked = false;
-        rb.linearVelocity = Vector2.zero; // Stops movement
+        rb.linearVelocity = Vector2.zero;
         Debug.Log("Shell stopped by player.");
+
+        if (respawnCoroutine == null)
+        {
+            respawnCoroutine = StartCoroutine(WakeUpAndRespawnSequence()); // Restart respawn timer
+        }
     }
 
     void ReverseDirection()
     {
+        AudioManager.Instance.PlaySFX("Bump");
+
         direction *= -1;
         rb.linearVelocity = new Vector2(direction * shellSpeed, rb.linearVelocity.y);
 
