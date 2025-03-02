@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
+using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
 {
@@ -184,6 +186,8 @@ public class PlayerController : MonoBehaviour
         float currentMaxSpeed = isSprinting ? sprintSpeed : maxSpeed;
 
         int movementDirection = GetMovementDirection();
+        MarioAnim.SetFloat("InputX",movementDirection);
+        MarioAnim.SetFloat("VelocityX",rb.linearVelocityX);
         if (movementDirection != 0)
         {
             // Decelerate to zero if reversing direction
@@ -200,6 +204,7 @@ public class PlayerController : MonoBehaviour
         {
             targetSpeed = 0f;
         }
+        MarioAnim.SetFloat("Speed",Math.Abs(currentSpeed));
     }
 
     private void HandleMovementKey(KeyCode key, int direction)
