@@ -9778,6 +9778,8 @@ MonoBehaviour:
   height: 6.5
   undergroundHeight: -14
   undergroundThreshold: 0
+  AbovegroundHeight: 2
+  AbovegroundThreshold: 0
 --- !u!1 &523047880
 GameObject:
   m_ObjectHideFlags: 0
