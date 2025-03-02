@@ -81,6 +81,7 @@ public class BricksLogic : MonoBehaviour
                 Hp -= 1;
             BrickAnim.Play("Brick Bounce", 0);
             SpewObject(!other.CompareTag(MariosmallTag));
+            AudioManager.Instance.PlaySFX("Brickbump");
         }
         if(Hp==0&&!Smash)
         {
