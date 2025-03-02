@@ -156,6 +156,7 @@ public class KoopaShell : MonoBehaviour
 
     void StopShell()
     {
+        AudioManager.Instance.PlaySFX("Kick");
         isKicked = false;
         rb.linearVelocity = Vector2.zero;
         gameObject.tag = "Untagged"; // Remove tag when stopped
