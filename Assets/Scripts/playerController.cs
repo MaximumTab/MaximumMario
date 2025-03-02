@@ -67,6 +67,8 @@ public class PlayerController : MonoBehaviour
     private Vector2 originalColliderSize;
     private Vector2 originalColliderOffset;
     private PlayerLevel lastLevel;
+    private bool isInvincible = false;
+    private Coroutine invincibleRoutine;
     private Animator MarioAnim;
 
     private ScoreManager scoreManager; // Add reference to ScoreManager
@@ -94,6 +96,8 @@ public class PlayerController : MonoBehaviour
         // Initialize
         UpdatePlayerForm(currentLevel);
         lastLevel = currentLevel;
+
+        scoreManager = FindObjectOfType<ScoreManager>(); // Initialize ScoreManager reference
     }
 
     private void Update()
@@ -180,9 +184,6 @@ public class PlayerController : MonoBehaviour
         float currentMaxSpeed = isSprinting ? sprintSpeed : maxSpeed;
 
         int movementDirection = GetMovementDirection();
-        MarioAnim.SetFloat("InputX",movementDirection);
-        MarioAnim.SetFloat("VelocityX",rb.linearVelocityX);
-        
         if (movementDirection != 0)
         {
             // Decelerate to zero if reversing direction
@@ -254,7 +255,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 origin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y);
         Vector2 size = new Vector2(playerCollider.bounds.size.x * 0.9f, 0.1f);
-
+        
         RaycastHit2D hit = Physics2D.BoxCast(
             origin,
             size,
@@ -429,32 +430,36 @@ public class PlayerController : MonoBehaviour
 
     private void DowngradeLevel()
     {
-        // Star Mario takes no damage.
+        // If we are already in invincibility mode, do nothing:
+        if (isInvincible) return;
+
+        // If Star, ignore damage
         if (currentLevel == PlayerLevel.Level4_Star)
         {
             Debug.Log("Star Mario is invincible! No downgrade.");
             return; // Do nothing
         }
+        else if (currentLevel == PlayerLevel.Level3_Fire)
+        {
+            UpdatePlayerLevel(PlayerLevel.Level2_Big);
+        }
+        else if (currentLevel == PlayerLevel.Level2_Big)
+        {
+            UpdatePlayerLevel(PlayerLevel.Level1_Small);
+        }
+        else // Already Level1_Small => die or reset scene
+        {
+            Debug.Log("Mario died! Reloading scene...");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            MarioAnim.Play("Death");
+            return;
+        }
 
-    // If Fire, go to Big
-    if (currentLevel == PlayerLevel.Level3_Fire)
-    {
-        UpdatePlayerLevel(PlayerLevel.Level2_Big);
+        // If we successfully downgraded from Fire->Big or Big->Small,
+        // start the invincibility flicker
+        if (invincibleRoutine != null) StopCoroutine(invincibleRoutine);
+        invincibleRoutine = StartCoroutine(InvincibilityFlicker());
     }
-    // If Big, go to Small
-    else if (currentLevel == PlayerLevel.Level2_Big)
-    {
-        UpdatePlayerLevel(PlayerLevel.Level1_Small);
-    }
-    // If already Small, "die" -> reload scene
-    else // Level1_Small
-    {
-        Debug.Log("Mario died! Reloading scene...");
-        //MarioAnim.SetBool("Dead",true);
-        MarioAnim.Play("Death");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-}
 
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -483,4 +488,71 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+   private List<Collider2D> currentlyIgnored = new List<Collider2D>();
+
+    private void SetEnemyCollisionsIgnored(bool ignore)
+    {
+        if (ignore)
+        {
+            // Find all enemies
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach (GameObject enemy in enemies)
+            {
+                Collider2D enemyCol = enemy.GetComponent<Collider2D>();
+                if (enemyCol != null)
+                {
+                    Physics2D.IgnoreCollision(playerCollider, enemyCol, true);
+                    currentlyIgnored.Add(enemyCol);
+                }
+            }
+        }
+        else
+        {
+            // Re-enable collisions only for those we actually ignored
+            foreach (Collider2D col in currentlyIgnored)
+            {
+                if (col != null) // might have been destroyed
+                {
+                    Physics2D.IgnoreCollision(playerCollider, col, false);
+                }
+            }
+            currentlyIgnored.Clear();
+        }
+    }
+
+
+    private IEnumerator InvincibilityFlicker()
+    {
+        isInvincible = true;
+
+        // Random time between 3 and 4 seconds
+        float randomDuration = Random.Range(3f, 4f);
+        float elapsed = 0f;
+
+        // 1) Ignore collisions with enemies
+        SetEnemyCollisionsIgnored(true);
+
+        // 2) Flicker sprite
+        SpriteRenderer sr = playerSprite;
+        if (sr == null) yield break;
+
+        while (elapsed < randomDuration)
+        {
+            sr.enabled = !sr.enabled;
+            float flickerStep = 0.2f;
+            yield return new WaitForSeconds(flickerStep);
+            elapsed += flickerStep;
+        }
+
+        // End of invincibility: make sprite visible
+        sr.enabled = true;
+
+        // 3) Re-enable collisions
+        SetEnemyCollisionsIgnored(false);
+
+        isInvincible = false;
+        Debug.Log("Invincibility ended.");
+    }
+
 }
