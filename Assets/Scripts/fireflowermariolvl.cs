@@ -16,6 +16,7 @@ public class FireFlowerMarioLevel : MonoBehaviour
                 // Set them to Level3_Fire
                 pc.UpdatePlayerLevel(PlayerController.PlayerLevel.Level3_Fire);
                 Debug.Log("Collided with player -> changed to Level3_Fire");
+                pc.MarioAnim.SetBool("Fire",true);
                 
                 // Destroy the fire flower
                 Destroy(gameObject);

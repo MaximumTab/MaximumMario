@@ -107,6 +107,8 @@ public class MushroomMovement : MonoBehaviour
                 // 2) Call the method on that instance
                 pc.UpdatePlayerLevel(PlayerController.PlayerLevel.Level2_Big);
                 Debug.Log("Collided with player -> changed to Level2_Big");
+
+                pc.MarioAnim.SetBool("Big",true);
                 
                 // 3) Destroy this object (e.g., the item)
                 Destroy(gameObject);

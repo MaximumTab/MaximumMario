@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
     private PlayerLevel lastLevel;
     private bool isInvincible = false;
     private Coroutine invincibleRoutine;
-    private Animator MarioAnim;
+    public Animator MarioAnim;
 
     private ScoreManager scoreManager; // Add reference to ScoreManager
 
@@ -428,10 +428,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (currentLevel == PlayerLevel.Level3_Fire)
         {
+            MarioAnim.SetBool("Fire",false);
             UpdatePlayerLevel(PlayerLevel.Level2_Big);
         }
         else if (currentLevel == PlayerLevel.Level2_Big)
         {
+            MarioAnim.SetBool("Big",false);
             UpdatePlayerLevel(PlayerLevel.Level1_Small);
         }
         else // Already Level1_Small => die or reset scene

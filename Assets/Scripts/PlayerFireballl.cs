@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class PlayerFireball : MonoBehaviour
@@ -6,13 +8,23 @@ public class PlayerFireball : MonoBehaviour
     public Transform firePoint;
     public float fireRate = 0.5f;
     private float nextFireTime = 0f;
+    private PlayerController pc;
 
+    void Start()
+    {
+        pc = gameObject.GetComponent<PlayerController>();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.X) && Time.time > nextFireTime)
         {
             ShootFireball();
             nextFireTime = Time.time + fireRate;
+        }
+
+        if(Time.time > nextFireTime)
+        {
+            pc.MarioAnim.SetBool("Shoot",false);
         }
     }
 
@@ -21,5 +33,6 @@ public class PlayerFireball : MonoBehaviour
         GameObject fireball = Instantiate(fireballPrefab, firePoint.position, Quaternion.identity);
         float direction = transform.localScale.x; // Checks facing direction
         fireball.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(5f * direction, 0f);
+        pc.MarioAnim.SetBool("Shoot",true);
     }
 }

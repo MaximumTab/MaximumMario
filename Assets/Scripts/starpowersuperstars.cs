@@ -17,6 +17,7 @@ public class StarPowerSuperStars : MonoBehaviour
                 // Set them to Level4_Star
                 pc.UpdatePlayerLevel(PlayerController.PlayerLevel.Level4_Star);
                 Debug.Log("Collided with player -> changed to Level4_Star");
+                pc.MarioAnim.SetBool("Star",true);
                 
                 // Destroy the star
                 Destroy(gameObject);
