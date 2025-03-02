@@ -84,6 +84,12 @@ public class PlayerController : MonoBehaviour
         rb.freezeRotation = true;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
+
+        rb = GetComponent<Rigidbody2D>();
+        playerCollider = GetComponent<BoxCollider2D>();
+
+        originalColliderSize = playerCollider.size;
+        originalColliderOffset = playerCollider.offset;
        
 
         if (playerSprite != null)
@@ -410,6 +416,13 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Player level updated to: " + currentLevel + ", tag = " + gameObject.tag);
     }
 
+    private void ShrinkHitboxToOriginal(BoxCollider2D col)
+    {
+        // Restore the original values stored in Start()
+        col.size = originalColliderSize;
+        col.offset = originalColliderOffset;
+    }
+
     public void UpdatePlayerForm(PlayerLevel newLevel)
     {
         UpdatePlayerLevel(newLevel);
@@ -417,6 +430,7 @@ public class PlayerController : MonoBehaviour
 
     private void DowngradeLevel()
     {
+        BoxCollider2D col = GetComponent<BoxCollider2D>();
         // If we are already in invincibility mode, do nothing:
         if (isInvincible) return;
 
@@ -435,6 +449,7 @@ public class PlayerController : MonoBehaviour
         {
             MarioAnim.SetBool("Big",false);
             UpdatePlayerLevel(PlayerLevel.Level1_Small);
+            if (col != null) ShrinkHitboxToOriginal(col);
         }
         else // Already Level1_Small => die or reset scene
         {

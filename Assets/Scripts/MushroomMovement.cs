@@ -64,6 +64,8 @@ public class MushroomMovement : MonoBehaviour
     private bool isGrounded = false;
     private float moveTimer = 0f;
 
+    
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -109,6 +111,23 @@ public class MushroomMovement : MonoBehaviour
                 Debug.Log("Collided with player -> changed to Level2_Big");
 
                 pc.MarioAnim.SetBool("Big",true);
+
+                BoxCollider2D col = pc.GetComponent<BoxCollider2D>();
+                if (col != null)
+                {
+                    // 2) Calculate new height (double the current)
+                    float oldHeight = col.size.y;
+                    float newHeight = oldHeight * 2f; // e.g., double
+
+                    // 3) Shift offset up by half the extra height
+                    float offsetShift = (newHeight - oldHeight) / 2f;
+
+                    // 4) Apply the new size and offset
+                    col.size = new Vector2(col.size.x, newHeight);
+                    col.offset = new Vector2(col.offset.x, col.offset.y + offsetShift);
+
+                    Debug.Log("Hitbox grown: oldHeight=" + oldHeight + ", newHeight=" + newHeight);
+                }
                 
                 // 3) Destroy this object (e.g., the item)
                 Destroy(gameObject);
