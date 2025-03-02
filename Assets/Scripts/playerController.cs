@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -335,7 +336,6 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Pipe to the right detected! Starting rightward cutscene...");
             StartCoroutine(PipeCutsceneRight());
             AudioManager.Instance.PlaySFX("Pipe");
-            
         }
     }
 
@@ -380,15 +380,7 @@ public class PlayerController : MonoBehaviour
 
         isInPipeCutscene = false;
         Debug.Log("Pipe (right) cutscene finished!");
-
-        if (pipeDestinationRight != null)
-        {
-        transform.position = pipeDestinationRight.position;
-        }
-
-        // Ensure camera updates for rightward pipe transition
-        FindObjectOfType<SideScrolling>().SetRightwardPipeTransition(true);
-        }
+    }
 
 
     // ------------- PLAYER LEVEL LOGIC -------------
@@ -419,4 +411,43 @@ public class PlayerController : MonoBehaviour
     {
         UpdatePlayerLevel(newLevel);
     }
+
+    private void DowngradeLevel()
+{
+    // Star Mario takes no damage.
+    if (currentLevel == PlayerLevel.Level4_Star)
+    {
+        Debug.Log("Star Mario is invincible! No downgrade.");
+        return; // Do nothing
+    }
+
+    // If Fire, go to Big
+    if (currentLevel == PlayerLevel.Level3_Fire)
+    {
+        UpdatePlayerLevel(PlayerLevel.Level2_Big);
+    }
+    // If Big, go to Small
+    else if (currentLevel == PlayerLevel.Level2_Big)
+    {
+        UpdatePlayerLevel(PlayerLevel.Level1_Small);
+    }
+    // If already Small, "die" -> reload scene
+    else // Level1_Small
+    {
+        Debug.Log("Mario died! Reloading scene...");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+}
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Collided with Enemy! Downgrading level...");
+            DowngradeLevel();
+        }
+    }
+
+
 }
