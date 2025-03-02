@@ -1,23 +1,25 @@
 using UnityEngine;
 
-public class Goomba : MonoBehaviour
+public class Koopa : MonoBehaviour
 {
-    public float speed = 2f; // Movement speed
+    public float speed = 2f; // Walking speed
     private int direction = -1; // Starts moving left
     private Rigidbody2D rb;
-    private SpriteRenderer spriteRenderer;
-    private bool hasActivated = false; // Tracks if Goomba has been activated
+    private bool hasActivated = false;
     private Camera mainCamera;
 
     public float stompForce = 5f; // Bounce force applied to player after stomping
-    public Sprite stompedSprite; // Stomped sprite
-    private bool isStomped = false; // Prevents multiple triggers
+    public GameObject shellPrefab; // Prefab for the shell version
+    public Sprite deathSprite; // New sprite for death animation
+    private bool isDead = false; // Prevents multiple triggers
+
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        mainCamera = Camera.main;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        mainCamera = Camera.main; 
     }
 
     void Update()
@@ -26,17 +28,15 @@ public class Goomba : MonoBehaviour
 
         Vector3 screenPoint = mainCamera.WorldToViewportPoint(transform.position);
 
-        // Check if Goomba is just outside the camera's view (slightly off-screen)
         if (screenPoint.x > -0.02f && screenPoint.x < 1.02f && screenPoint.y > 0 && screenPoint.y < 1)
         {
-            hasActivated = true; 
+            hasActivated = true;
         }
     }
 
     void FixedUpdate()
     {
-        if (!hasActivated || isStomped) return;
-
+        if (!hasActivated || isDead) return;
         rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
     }
 
@@ -48,28 +48,26 @@ public class Goomba : MonoBehaviour
         {
             foreach (ContactPoint2D contact in collision.contacts)
             {
-                // If the collision is from above (stomp)
-                if (contact.normal.y < -0.5f)
+                if (contact.normal.y < -0.5f) // Stomped
                 {
                     Stomped(other);
                     return;
                 }
-                // If the player collides from the side, they take damage (implement as needed)
-                else if (Mathf.Abs(contact.normal.x) > Mathf.Abs(contact.normal.y))
+                else if (Mathf.Abs(contact.normal.x) > Mathf.Abs(contact.normal.y)) // Player hit from side
                 {
                     PlayerHit(other);
                     return;
                 }
             }
         }
-        else
+        else // Flip direction on wall collision
         {
-            // Flip direction on wall collision
             foreach (ContactPoint2D contact in collision.contacts)
             {
                 if (Mathf.Abs(contact.normal.x) > Mathf.Abs(contact.normal.y))
                 {
                     Flip();
+                    transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
                     return;
                 }
             }
@@ -78,10 +76,12 @@ public class Goomba : MonoBehaviour
 
     void Stomped(GameObject player)
     {
-        if (isStomped) return; // Prevent multiple triggers
-        isStomped = true;
+        if (isDead) return; // Prevent multiple activations
 
-        // Add bounce effect to player
+        // Spawn Shell Koopa
+        GameObject shell = Instantiate(shellPrefab, transform.position, Quaternion.identity);
+        
+        // Bounce the player upwards
         Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
         if (playerRb != null)
         {
@@ -93,57 +93,36 @@ public class Goomba : MonoBehaviour
         ScoreManager scoreManager = FindAnyObjectByType<ScoreManager>();
         int stompScore = scoreManager.GetStompScore();
         scoreManager.AddScore(stompScore, transform.position);
-        scoreManager.IncrementStompCount(); // Increase streak
+        scoreManager.IncrementStompCount();
 
-        Animator animator = GetComponent<Animator>();
-        if (animator != null)
+        Destroy(gameObject); // Destroy Alive Koopa
+    }
+
+    public void KillKoopa()
+    {
+        if (isDead) return;
+        isDead = true;
+        if (GetComponent<Animator>() != null)
         {
-            animator.enabled = false;
+            GetComponent<Animator>().enabled = false;
+        }
+        if (deathSprite != null)
+        {
+            spriteRenderer.sprite = deathSprite; // Change to death sprite
         }
 
-        // Change sprite to stomped version
-        if (stompedSprite != null)
-        {
-            spriteRenderer.sprite = stompedSprite;
-        }
-
-        // Disable physics interaction
-        rb.simulated = false;
-
-        Invoke("DestroyGoomba", 0.2f); 
-    }
-
-
-    void DestroyGoomba()
-    {
-        Destroy(gameObject);
-    }
-
-    void PlayerHit(GameObject player)
-    {
-        // Implement player damage here (e.g., reduce health, trigger animation, etc.)
-        Debug.Log("Player hit by Goomba! Take damage.");
-    }
-
-    void Flip()
-    {
-        direction *= -1;
-    }
-
-    public void KillGoomba()
-    {
-        if (isStomped) return;
-        isStomped = true;
-
-        spriteRenderer.flipY = true;
-
+        GetComponent<SpriteRenderer>().flipY = true; // Flip to indicate death
         rb.linearVelocity = new Vector2(0f, 5f);
-        rb.angularVelocity = 360f; 
+        rb.angularVelocity = 360f;
 
         int ignoreLayer = LayerMask.NameToLayer("IGNOREALL");
         if (ignoreLayer != -1)
         {
             gameObject.layer = ignoreLayer;
+        }
+        else
+        {
+            Debug.LogWarning("Layer 'IgnoreEverything' not found! Make sure you created it in Unity.");
         }
 
         ScoreManager scoreManager = FindAnyObjectByType<ScoreManager>();
@@ -152,4 +131,13 @@ public class Goomba : MonoBehaviour
         Destroy(gameObject, 3f);
     }
 
+    void PlayerHit(GameObject player)
+    {
+        Debug.Log("Player hit by Koopa! Take damage.");
+    }
+
+    void Flip()
+    {
+        direction *= -1;
+    }
 }

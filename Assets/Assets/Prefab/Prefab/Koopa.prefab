@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 3245064088598591817}
   - component: {fileID: 8113711074116994639}
   - component: {fileID: 2720977933138968323}
-  - component: {fileID: 4017728861439850581}
   - component: {fileID: 7376116822873343044}
+  - component: {fileID: 6320216096865309289}
   m_Layer: 0
-  m_Name: Goomba
+  m_Name: Koopa
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 185909325
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6007295622200079779, guid: 7b8e4040b8b806040a87a9ea56e51934, type: 3}
+  m_Sprite: {fileID: 4008000284480476741, guid: ffd0aecc73e4e3841945ed5cd2c9a4c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -129,13 +129,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 1.5}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.5}
   m_EdgeRadius: 0
 --- !u!50 &2720977933138968323
 Rigidbody2D:
@@ -164,21 +164,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &4017728861439850581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1445355763514779672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068c66fc12ea1ff41af810f615ded85d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  stompForce: 5
-  stompedSprite: {fileID: 21300000, guid: df9fe41a55a5e5843b975451a5074519, type: 3}
 --- !u!95 &7376116822873343044
 Animator:
   serializedVersion: 7
@@ -189,7 +174,7 @@ Animator:
   m_GameObject: {fileID: 1445355763514779672}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: da1aca00230ff634fbbcbcfe5e4af8f0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0d035847226a7344a87a173d05e6ecb8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -201,3 +186,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6320216096865309289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445355763514779672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ac32f5523157c4fb2304409e274f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  stompForce: 5
+  shellPrefab: {fileID: 1445355763514779672, guid: dbb252cfc0bf64d418cdbcbcef49a50b, type: 3}
+  deathSprite: {fileID: 21300000, guid: 212cba2c0daacfd41a5dd77111941fad, type: 3}

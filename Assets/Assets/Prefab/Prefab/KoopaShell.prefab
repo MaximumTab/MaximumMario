@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 3245064088598591817}
   - component: {fileID: 8113711074116994639}
   - component: {fileID: 2720977933138968323}
-  - component: {fileID: 4017728861439850581}
-  - component: {fileID: 7376116822873343044}
+  - component: {fileID: 2861752986786497725}
   m_Layer: 0
-  m_Name: Goomba
+  m_Name: KoopaShell
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 185909325
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6007295622200079779, guid: 7b8e4040b8b806040a87a9ea56e51934, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 212cba2c0daacfd41a5dd77111941fad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,7 +100,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1070b6e7b58138b4fbb6c3ebcc17f5af, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -125,7 +124,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.000014305115}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -135,7 +134,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.8750849}
   m_EdgeRadius: 0
 --- !u!50 &2720977933138968323
 Rigidbody2D:
@@ -164,7 +163,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &4017728861439850581
+--- !u!114 &2861752986786497725
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,31 +172,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1445355763514779672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068c66fc12ea1ff41af810f615ded85d, type: 3}
+  m_Script: {fileID: 11500000, guid: db5cad55c0b695b48b91fea4b53ba618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  stompForce: 5
-  stompedSprite: {fileID: 21300000, guid: df9fe41a55a5e5843b975451a5074519, type: 3}
---- !u!95 &7376116822873343044
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1445355763514779672}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: da1aca00230ff634fbbcbcfe5e4af8f0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  shellSpeed: 6
+  wakeUpTime: 4
+  respawnTime: 5.5
+  playerBounceForce: 5
+  wakeUpSprite: {fileID: 21300000, guid: fccefe0675fda1d4f9a75280e96c198f, type: 3}
+  aliveKoopaPrefab: {fileID: 1445355763514779672, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}
