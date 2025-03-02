@@ -444,10 +444,26 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Collided with Enemy! Downgrading level...");
-            DowngradeLevel();
+            bool shouldDowngrade = false;
+
+            foreach (ContactPoint2D contact in collision.contacts)
+            {
+                if (contact.normal.y <= 0.5f)
+                {
+                    shouldDowngrade = true;
+                    break;
+                }
+            }
+
+            if (shouldDowngrade)
+            {
+                Debug.Log("Hit enemy from side/bottom → Downgrade!");
+                DowngradeLevel(); 
+            }
+            else
+            {
+                Debug.Log("Hit enemy from above → no downgrade (maybe stomp enemy).");
+            }
         }
     }
-
-
 }
