@@ -106,7 +106,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   bounceForce: 5
-  maxBounces: 3
+  maxBounces: 2
+  minVelocityThreshold: 0.5
   animator: {fileID: 1199756071852785645}
 --- !u!50 &8743162293281341951
 Rigidbody2D:
