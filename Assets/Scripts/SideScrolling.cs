@@ -6,9 +6,15 @@ public class SideScrolling : MonoBehaviour
     private float leftScreenBound;
     public float height = 6.5f;
 
+    [Header("Underground")]
     public float undergroundHeight = -9.5f;
     public float undergroundThreshold = 0f;
     
+    [Header("AboveGround")]
+
+    public float AbovegroundHeight = -9.5f;
+    public float AbovegroundThreshold = 0f;
+
     private void Awake()
     {
         // Try to find "Big Mario", if not found, try "Small Mario"
@@ -48,4 +54,14 @@ public class SideScrolling : MonoBehaviour
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlayMusic("UGmusic");
     }
+
+public void SetRightwardPipeTransition(bool rightPipe)
+{
+    Vector3 cameraPosition = transform.position;
+    cameraPosition.y = rightPipe ? AbovegroundHeight : height; 
+    transform.position = cameraPosition;
+    
+    AudioManager.Instance.StopMusic();
+    AudioManager.Instance.PlayMusic("BGM"); 
+}
 }

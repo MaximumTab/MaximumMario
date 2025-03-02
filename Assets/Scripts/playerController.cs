@@ -335,6 +335,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Pipe to the right detected! Starting rightward cutscene...");
             StartCoroutine(PipeCutsceneRight());
             AudioManager.Instance.PlaySFX("Pipe");
+            
         }
     }
 
@@ -379,7 +380,15 @@ public class PlayerController : MonoBehaviour
 
         isInPipeCutscene = false;
         Debug.Log("Pipe (right) cutscene finished!");
-    }
+
+        if (pipeDestinationRight != null)
+        {
+        transform.position = pipeDestinationRight.position;
+        }
+
+        // Ensure camera updates for rightward pipe transition
+        FindObjectOfType<SideScrolling>().SetRightwardPipeTransition(true);
+        }
 
 
     // ------------- PLAYER LEVEL LOGIC -------------
