@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public float acceleration = 10f;
     public float deceleration = 15f;
     public float jumpForce = 10f;
-    public float gravityScale = 2f;
+    
 
     private Rigidbody2D rb;
     private BoxCollider2D playerCollider;
@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
         rb.freezeRotation = true;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
-        rb.gravityScale = gravityScale;
+       
 
         if (playerSprite != null)
         {
@@ -283,9 +283,9 @@ public class PlayerController : MonoBehaviour
         if (playerSprite != null) playerSprite.sortingOrder = behindSortingOrder;
 
         // 2) Freeze gravity & velocity
-        float originalGravity = rb.gravityScale;
+        
         Vector2 originalVelocity = rb.velocity;
-        rb.gravityScale = 0f;
+        
         rb.velocity = Vector2.zero;
 
         float elapsed = 0f;
@@ -309,7 +309,6 @@ public class PlayerController : MonoBehaviour
         if (playerSprite != null) playerSprite.sortingOrder = originalSortingOrder;
 
         // 4) Restore gravity & velocity
-        rb.gravityScale = originalGravity;
         rb.velocity = originalVelocity; // Optionally restore old velocity or just keep zero
 
         isInPipeCutscene = false;
@@ -349,9 +348,9 @@ public class PlayerController : MonoBehaviour
         if (playerSprite != null) playerSprite.sortingOrder = behindSortingOrder;
 
         // 2) Freeze gravity & velocity
-        float originalGravity = rb.gravityScale;
+       
         Vector2 originalVelocity = rb.velocity;
-        rb.gravityScale = 0f;
+      
         rb.velocity = Vector2.zero;
 
         float elapsed = 0f;
@@ -368,14 +367,14 @@ public class PlayerController : MonoBehaviour
             transform.position = pipeDestinationRight.position;
         }
 
-        FindObjectOfType<SideScrolling>().SetUnderground(true);
+        FindObjectOfType<SideScrolling>().SetRightwardPipeTransition(pipeDestinationRight);
 
         // 3) Restore collisions & sprite
         playerCollider.enabled = true;
         if (playerSprite != null) playerSprite.sortingOrder = originalSortingOrder;
 
         // 4) Restore gravity & velocity
-        rb.gravityScale = originalGravity;
+       
         rb.velocity = originalVelocity;
 
         isInPipeCutscene = false;
