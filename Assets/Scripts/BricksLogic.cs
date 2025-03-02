@@ -1,4 +1,5 @@
 using System;
+using UnityEditor.UIElements;
 using UnityEngine;
 
 public class BricksLogic : MonoBehaviour
@@ -14,7 +15,7 @@ public class BricksLogic : MonoBehaviour
     [SerializeField] private GameObject CheckMush;
     [SerializeField] private GameObject FireReplace;
     [SerializeField] private int Hp=1;
-    [SerializeField] private string MariosmallTag;
+    private string MariosmallTag = "Small Mario";
     private int i = 0;
 
     [SerializeField] private Animator BrickAnim;
