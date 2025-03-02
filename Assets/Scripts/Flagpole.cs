@@ -156,7 +156,7 @@ public class Flagpole : MonoBehaviour
     {
         while (true)
         {
-            playerRb.AddForce(Vector2.right * 15f, ForceMode2D.Force);
+            playerRb.AddForce(Vector2.right * 150f, ForceMode2D.Force);
             yield return null;
         }
     }

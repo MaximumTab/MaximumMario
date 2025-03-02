@@ -100,8 +100,17 @@ public class MushroomMovement : MonoBehaviour
 
         if (collision.gameObject.CompareTag("BigMario") || collision.gameObject.CompareTag("SmallMario"))
         {
-            Debug.Log("colided with player");
-            Destroy(gameObject);
+            // 1) Grab the PlayerController component on this collided object
+            PlayerController pc = collision.gameObject.GetComponent<PlayerController>();
+            if (pc != null)
+            {
+                // 2) Call the method on that instance
+                pc.UpdatePlayerLevel(PlayerController.PlayerLevel.Level2_Big);
+                Debug.Log("Collided with player -> changed to Level2_Big");
+                
+                // 3) Destroy this object (e.g., the item)
+                Destroy(gameObject);
+            }
         }
 
     }

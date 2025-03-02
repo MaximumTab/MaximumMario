@@ -156,25 +156,7 @@ public class PlayerController : MonoBehaviour
             MovePlayer();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        // Example item tags: "Mushroom" => Big, "FireFlower" => Fire, "Star" => Star
-        if (other.CompareTag("Mushroom"))
-        {
-            UpdatePlayerLevel(PlayerLevel.Level2_Big);
-            Destroy(other.gameObject);
-        }
-        else if (other.CompareTag("FireFlower"))
-        {
-            UpdatePlayerLevel(PlayerLevel.Level3_Fire);
-            Destroy(other.gameObject);
-        }
-        else if (other.CompareTag("Star"))
-        {
-            UpdatePlayerLevel(PlayerLevel.Level4_Star);
-            Destroy(other.gameObject);
-        }
-    }
+
 
     private void ProcessInput()
     {
