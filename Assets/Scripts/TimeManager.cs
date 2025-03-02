@@ -62,5 +62,8 @@ public class TimeManager : MonoBehaviour
 
         isConvertingToScore = false;
         Debug.Log("Time converted to score.");
+
+        yield return new WaitForSeconds(2f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Main Menu");
     }
 }

@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
     private PlayerLevel lastLevel;
     private bool isInvincible = false;
     private Coroutine invincibleRoutine;
-    private Animator MarioAnim;
+    public Animator MarioAnim;
 
     private ScoreManager scoreManager; // Add reference to ScoreManager
 
@@ -156,25 +156,7 @@ public class PlayerController : MonoBehaviour
             MovePlayer();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        // Example item tags: "Mushroom" => Big, "FireFlower" => Fire, "Star" => Star
-        if (other.CompareTag("Mushroom"))
-        {
-            UpdatePlayerLevel(PlayerLevel.Level2_Big);
-            Destroy(other.gameObject);
-        }
-        else if (other.CompareTag("FireFlower"))
-        {
-            UpdatePlayerLevel(PlayerLevel.Level3_Fire);
-            Destroy(other.gameObject);
-        }
-        else if (other.CompareTag("Star"))
-        {
-            UpdatePlayerLevel(PlayerLevel.Level4_Star);
-            Destroy(other.gameObject);
-        }
-    }
+
 
     private void ProcessInput()
     {
@@ -204,7 +186,7 @@ public class PlayerController : MonoBehaviour
         {
             targetSpeed = 0f;
         }
-        MarioAnim.SetFloat("Speed",Math.Abs(currentSpeed));
+        MarioAnim.SetFloat("Speed",Math.Abs(currentSpeed/5));
     }
 
     private void HandleMovementKey(KeyCode key, int direction)
@@ -446,10 +428,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (currentLevel == PlayerLevel.Level3_Fire)
         {
+            MarioAnim.SetBool("Fire",false);
             UpdatePlayerLevel(PlayerLevel.Level2_Big);
         }
         else if (currentLevel == PlayerLevel.Level2_Big)
         {
+            MarioAnim.SetBool("Big",false);
             UpdatePlayerLevel(PlayerLevel.Level1_Small);
         }
         else // Already Level1_Small => die or reset scene

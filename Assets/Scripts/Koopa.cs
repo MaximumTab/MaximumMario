@@ -80,6 +80,7 @@ public class Koopa : MonoBehaviour
 
         // Spawn Shell Koopa
         GameObject shell = Instantiate(shellPrefab, transform.position, Quaternion.identity);
+        AudioManager.Instance.PlaySFX("Kick");
         
         // Bounce the player upwards
         Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();

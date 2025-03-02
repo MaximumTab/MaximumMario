@@ -10,6 +10,7 @@ public class KoopaShell : MonoBehaviour
     public float wakeUpTime = 4f;
     public float respawnTime = 5.5f;
     public float playerBounceForce = 5f;
+    public float enemyTagDelay = 0.5f; // Delay before tagging as enemy
 
     public Sprite wakeUpSprite;
     public Sprite originalSprite;
@@ -111,7 +112,7 @@ public class KoopaShell : MonoBehaviour
         }
         else
         {
-            KickShell(player);
+            KickShell(player, 1); // Default to kicking right if stomped from above
         }
 
         Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
@@ -132,10 +133,11 @@ public class KoopaShell : MonoBehaviour
 
         AudioManager.Instance.PlaySFX("Kick");
         isKicked = true;
-        direction = kickDirection != 0 ? kickDirection : (player.transform.position.x > transform.position.x ? 1 : -1);
+        direction = player.transform.position.x > transform.position.x ? -1 : 1; // Kick away from the player
         rb.linearVelocity = new Vector2(direction * shellSpeed, 0);
 
         spriteRenderer.sprite = originalSprite;
+        StartCoroutine(SetEnemyTagAfterDelay());
 
         if (respawnCoroutine != null)
         {
@@ -146,10 +148,18 @@ public class KoopaShell : MonoBehaviour
         Debug.Log("Shell kicked!");
     }
 
+    IEnumerator SetEnemyTagAfterDelay()
+    {
+        yield return new WaitForSeconds(enemyTagDelay);
+        gameObject.tag = "Enemy"; // Set tag to "Enemy" after delay
+    }
+
     void StopShell()
     {
+        AudioManager.Instance.PlaySFX("Kick");
         isKicked = false;
         rb.linearVelocity = Vector2.zero;
+        gameObject.tag = "Untagged"; // Remove tag when stopped
         Debug.Log("Shell stopped by player.");
 
         if (respawnCoroutine == null)

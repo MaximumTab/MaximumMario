@@ -8,15 +8,18 @@ public class Flagpole : MonoBehaviour
     [SerializeField] private float hopForceY = 5f;             // Vertical hop force
     [SerializeField] private Transform hidePoint;              // Point where the player stops and hides
     [SerializeField] private Transform flagSpriteTransform;    // Flag sprite that moves down
+    [SerializeField] private Transform flagTopPosition;        // Top position of the flagpole
 
     private bool flagpoleSequenceActive = false;
     private Rigidbody2D playerRb;
     private Transform playerTransform;
     private Collider2D flagpoleCollider;
+    private ScoreManager scoreManager;
 
     private void Awake()
     {
         flagpoleCollider = GetComponent<Collider2D>();
+        scoreManager = FindFirstObjectByType<ScoreManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -45,8 +48,23 @@ public class Flagpole : MonoBehaviour
                 playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
 
+            AwardFlagpolePoints(playerTransform.position.y);
             StartCoroutine(FlagpoleSequence());
         }
+    }
+
+    private void AwardFlagpolePoints(float playerY)
+    {
+        float flagHeight = flagTopPosition.position.y - slideBottomPosition.position.y;
+        float relativePosition = (playerY - slideBottomPosition.position.y) / flagHeight;
+
+        int points = 100;
+        if (relativePosition >= 0.8f) points = 5000;
+        else if (relativePosition >= 0.6f) points = 2000;
+        else if (relativePosition >= 0.4f) points = 800;
+        else if (relativePosition >= 0.2f) points = 400;
+        
+        scoreManager?.AddScore(points, playerTransform.position + new Vector3(2f, -2f, 0));
     }
 
     private IEnumerator FlagpoleSequence()
@@ -100,6 +118,8 @@ public class Flagpole : MonoBehaviour
 
         TimeManager timeManager = FindAnyObjectByType<TimeManager>();
         timeManager?.ConvertTimeToScore();
+
+
     }
 
     private IEnumerator MoveFlagDown(System.Action flagDoneCallback)
@@ -138,7 +158,7 @@ public class Flagpole : MonoBehaviour
     {
         while (true)
         {
-            playerRb.AddForce(Vector2.right * 15f, ForceMode2D.Force);
+            playerRb.AddForce(Vector2.right * 150f, ForceMode2D.Force);
             yield return null;
         }
     }

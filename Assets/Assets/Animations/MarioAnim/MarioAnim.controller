@@ -4899,7 +4899,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: VelocityX
-    m_EventTreshold: 0.05
+    m_EventTreshold: 0.0005
   - m_ConditionMode: 4
     m_ConditionEvent: InputX
     m_EventTreshold: 0
@@ -6550,7 +6550,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: VelocityX
-    m_EventTreshold: -0.05
+    m_EventTreshold: -0.0005
   - m_ConditionMode: 3
     m_ConditionEvent: InputX
     m_EventTreshold: 0
