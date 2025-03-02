@@ -4,7 +4,8 @@ public class Fireball : MonoBehaviour
 {
     public float speed = 5f;
     public float bounceForce = 3f;
-    public int maxBounces = 3; 
+    public int maxBounces = 3;
+    public Animator animator;
 
     private int bounceCount = 0;
     private Rigidbody2D rb;
@@ -17,6 +18,11 @@ public class Fireball : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!collision.CompareTag("Ground") || !collision.CompareTag("Ground") && bounceCount > maxBounces)
+        {
+            animator.SetBool("hasColided", true);
+        }
+
         if (collision.CompareTag("Enemy"))
         {
             Destroy(collision.gameObject); 
