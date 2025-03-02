@@ -5,6 +5,7 @@ public class Fireball : MonoBehaviour
     public float speed = 5f;
     public float bounceForce = 3f;
     public int maxBounces = 3;
+    public float minVelocityThreshold = 0.5f; // Threshold to destroy the fireball
     public Animator animator;
 
     private int bounceCount = 0;
@@ -13,22 +14,26 @@ public class Fireball : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.linearVelocity = transform.right * speed; 
+        rb.linearVelocity = transform.right * speed; // Use velocity instead of linearVelocity
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void Update()
     {
-        if (!collision.CompareTag("Ground") || !collision.CompareTag("Ground") && bounceCount > maxBounces)
+        // Destroy fireball if its velocity magnitude is too low
+        if (rb.linearVelocity.magnitude < minVelocityThreshold)
         {
-            animator.SetBool("hasColided", true);
+            Destroy(gameObject);
         }
+    }
 
-        if (collision.CompareTag("Enemy"))
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(collision.gameObject); 
             Destroy(gameObject); 
         }
-        else if (collision.CompareTag("Ground"))
+        else if (collision.gameObject.CompareTag("Ground"))
         {
             if (bounceCount < maxBounces)
             {

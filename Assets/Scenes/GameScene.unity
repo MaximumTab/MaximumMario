@@ -10178,7 +10178,7 @@ GameObject:
   - component: {fileID: 560133028}
   m_Layer: 6
   m_Name: InteractPipe
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19243,7 +19243,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slideSpeed: 3
   slideBottomPosition: {fileID: 857478945}
-  hopForceX: 3
   hopForceY: 5
   hidePoint: {fileID: 1309718764}
 --- !u!1001 &1585753997
@@ -25113,7 +25112,7 @@ Transform:
   m_GameObject: {fileID: 2033470420}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 180.91, y: 4.89, z: 0}
+  m_LocalPosition: {x: -5.3, y: -3.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
