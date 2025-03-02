@@ -46,7 +46,7 @@ public class Goomba : MonoBehaviour
     {
         GameObject other = collision.gameObject;
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Big Mario") || other.CompareTag("Small Mario"))
         {
             foreach (ContactPoint2D contact in collision.contacts)
             {

@@ -5,7 +5,6 @@ public class Flagpole : MonoBehaviour
 {
     [SerializeField] private float slideSpeed = 3f;            // Speed of sliding down the pole
     [SerializeField] private Transform slideBottomPosition;      // Bottom position of the flagpole
-    [SerializeField] private float hopForceX = 3f;                 // Horizontal hop force
     [SerializeField] private float hopForceY = 5f;                 // Vertical hop force
     [SerializeField] private Transform hidePoint;                // Point where the player stops and hides
 
@@ -21,7 +20,7 @@ public class Flagpole : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!flagpoleSequenceActive && collision.CompareTag("Player"))
+        if (!flagpoleSequenceActive && (collision.CompareTag("Big Mario") || collision.CompareTag("Small Mario")))
         {
             flagpoleSequenceActive = true;
             
@@ -54,52 +53,69 @@ public class Flagpole : MonoBehaviour
 
     private IEnumerator FlagpoleSequence()
     {
-        AudioManager.Instance.PlaySFX("Flagpole");
-
-        // Slide the player down until they reach the bottom of the flagpole.
-        while (playerTransform.position.y > slideBottomPosition.position.y)
-        {
-            Vector3 newPos = playerTransform.position;
-            newPos.y = Mathf.MoveTowards(playerTransform.position.y, slideBottomPosition.position.y, slideSpeed * Time.deltaTime);
-            playerTransform.position = newPos;
-            yield return null;
-        }
-        
-        // Snap the player exactly to the bottom position.
-        playerTransform.position = new Vector3(playerTransform.position.x, slideBottomPosition.position.y, playerTransform.position.z);
-        
-        // Short pause to simulate finishing the slide.
+        playerRb.gravityScale = 0f;
+        playerRb.linearVelocity = Vector2.zero;
+        playerRb.constraints = RigidbodyConstraints2D.FreezeAll;
         yield return new WaitForSeconds(1f);
         
+        AudioManager.Instance.PlaySFX("Flagpole");
+
+        // Slide down the pole while maintaining X position
+        float currentX = playerTransform.position.x;
+        while (playerTransform.position.y > slideBottomPosition.position.y)
+        {
+            playerTransform.position = new Vector3(
+                currentX,
+                Mathf.MoveTowards(playerTransform.position.y, slideBottomPosition.position.y, slideSpeed * Time.deltaTime),
+                playerTransform.position.z
+            );
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(.5f);
+        
+        // Snap to exact bottom position
+        playerTransform.position = new Vector3(
+            slideBottomPosition.position.x,
+            slideBottomPosition.position.y,
+            playerTransform.position.z
+        );
+
+        yield return new WaitForSeconds(.25f);
+
         AudioManager.Instance.PlayConditionSound("LevelClear");
 
-        // Allow horizontal movement by making sure only rotation is frozen.
+        // Unfreeze the player completely except rotation and apply hop force
         playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        
-        // Reset velocity and apply the hop force as an impulse.
-        playerRb.linearVelocity = Vector2.zero;
-        playerRb.AddForce(new Vector2(hopForceX, hopForceY), ForceMode2D.Impulse);
-        
-        // Optional pause after hop.
-        yield return new WaitForSeconds(0.2f);
-        
-        // Wait until the player's x position reaches or exceeds the hide point's x coordinate.
-        while (playerTransform.position.x < hidePoint.position.x)
+        playerRb.gravityScale = 1f;
+        playerRb.linearVelocity = Vector2.zero; // Reset velocity before applying force
+        playerRb.AddForce(new Vector2(0, hopForceY), ForceMode2D.Impulse);
+
+        // Start pushing the player right continuously
+        StartCoroutine(PushPlayerRight());
+
+        // Wait until player reaches hidePoint X position
+        while (Mathf.Abs(playerTransform.position.x - hidePoint.position.x) > 0.1f)
         {
             yield return null;
         }
-        
-        // Snap the player to the hide point.
-        playerTransform.position = hidePoint.position;
-        
-        // Stop the player completely.
+
+        // Stop all movement and hide player
         playerRb.linearVelocity = Vector2.zero;
-        playerRb.simulated = false;  // Disable physics simulation.
-        
-        // Hide the player.
+        playerRb.constraints = RigidbodyConstraints2D.FreezeAll;
+        StopCoroutine(PushPlayerRight());
         playerTransform.gameObject.SetActive(false);
 
         TimeManager timeManager = FindAnyObjectByType<TimeManager>();
         timeManager?.ConvertTimeToScore();
+    }
+
+    private IEnumerator PushPlayerRight()
+    {
+        while (true)
+        {
+            playerRb.AddForce(Vector2.right * 5f, ForceMode2D.Force); // Adjust force if necessary
+            yield return null;
+        }
     }
 }
