@@ -118,6 +118,8 @@ public class Flagpole : MonoBehaviour
 
         TimeManager timeManager = FindAnyObjectByType<TimeManager>();
         timeManager?.ConvertTimeToScore();
+
+
     }
 
     private IEnumerator MoveFlagDown(System.Action flagDoneCallback)
