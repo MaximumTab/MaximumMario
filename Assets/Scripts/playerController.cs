@@ -25,22 +25,47 @@ public class PlayerController : MonoBehaviour
 
     [Header("Layers & Distances")]
     [Tooltip("Assign ground and pipe layers together if you want to jump on pipes.")]
-    public LayerMask groundAndPipeLayers;   // ← Combine normal ground + special pipe layers here
+    public LayerMask groundAndPipeLayers;   
     public float groundCheckDistance = 0.05f;
 
     [Header("Pipe Settings (Downward Cutscene)")]
-    public LayerMask pipeLayer;
+    public LayerMask pipeLayer;             // For downward pipe
     public float pipeCheckDistance = 0.05f;
     public float pipeMoveSpeed = 2f;
     public float pipeMoveDuration = 2f;
     public Transform pipeDestination;
+
+    [Header("Pipe Settings (Rightward Cutscene)")]
+    public LayerMask pipeLayerRight;        // For the rightward pipe (e.g. "InteractPipe2" layer)
+    public float pipeCheckDistanceRight = 0.05f;  // Distance for boxcast to the right
+    public float pipeMoveDurationRight = 2f;      // Duration of moving horizontally
+    public Transform pipeDestinationRight;        // Separate teleporter for right pipe
 
     private bool isInPipeCutscene = false;
 
     [Header("Cutscene Collision & Rendering")]
     public SpriteRenderer playerSprite;      
     public int behindSortingOrder = -10;     
-    private int originalSortingOrder;        
+    private int originalSortingOrder;
+
+    [Header("Player Levels")]
+    public PlayerLevel currentLevel = PlayerLevel.Level1_Small;
+
+    [Header("Fire Shooter")]
+    public GameObject fireShooter;
+
+    public enum PlayerLevel
+    {
+        Level1_Small,
+        Level2_Big,
+        Level3_Fire,
+        Level4_Star
+    }
+
+    // Not used for scale logic currently, but you can keep them for reference
+    private Vector2 originalColliderSize;
+    private Vector2 originalColliderOffset;
+    private PlayerLevel lastLevel;
 
     private void Start()
     {
@@ -56,6 +81,14 @@ public class PlayerController : MonoBehaviour
         {
             originalSortingOrder = playerSprite.sortingOrder;
         }
+
+        // Store original collider data
+        originalColliderSize = playerCollider.size;
+        originalColliderOffset = playerCollider.offset;
+
+        // Initialize
+        UpdatePlayerForm(currentLevel);
+        lastLevel = currentLevel;
     }
 
     private void Update()
@@ -71,18 +104,31 @@ public class PlayerController : MonoBehaviour
                 AudioManager.Instance.PlaySFX("JumpSmall");
             }
 
-            // Check for pipe below when pressing S
+            // Press S to check for downward pipe
             if (Input.GetKeyDown(KeyCode.S))
             {
                 CheckPipeBelow();
             }
+
+            // Press E to check for rightward pipe
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                CheckPipeRight();
+            }
+        }
+
+        // If changed in Inspector or code, apply updates
+        if (currentLevel != lastLevel)
+        {
+            UpdatePlayerLevel(currentLevel);
+            lastLevel = currentLevel;
         }
     }
 
     private void FixedUpdate()
     {
         bool previouslyGrounded = isGrounded;
-        isGrounded = IsGrounded();  // Now includes ground + pipe
+        isGrounded = IsGrounded();
 
         if (!isInPipeCutscene)
         {
@@ -90,9 +136,28 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // Example item tags: "Mushroom" => Big, "FireFlower" => Fire, "Star" => Star
+        if (other.CompareTag("Mushroom"))
+        {
+            UpdatePlayerLevel(PlayerLevel.Level2_Big);
+            Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("FireFlower"))
+        {
+            UpdatePlayerLevel(PlayerLevel.Level3_Fire);
+            Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("Star"))
+        {
+            UpdatePlayerLevel(PlayerLevel.Level4_Star);
+            Destroy(other.gameObject);
+        }
+    }
+
     private void ProcessInput()
     {
-        // Handle left/right (A/D)
         HandleMovementKey(KeyCode.A, -1);
         HandleMovementKey(KeyCode.D, 1);
 
@@ -103,6 +168,7 @@ public class PlayerController : MonoBehaviour
         int movementDirection = GetMovementDirection();
         if (movementDirection != 0)
         {
+            // Decelerate to zero if reversing direction
             if (Mathf.Sign(movementDirection) != Mathf.Sign(rb.linearVelocity.x) && Mathf.Abs(rb.linearVelocity.x) > 0.1f)
             {
                 targetSpeed = 0f;
@@ -122,7 +188,6 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(key))
         {
-            // Move this key to the top of the stack
             movementStack = new Stack<KeyCode>(new Stack<KeyCode>(movementStack).ToArray());
             if (!movementStack.Contains(key))
             {
@@ -131,7 +196,6 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKeyUp(key))
         {
-            // Remove the key from the stack
             Stack<KeyCode> tempStack = new Stack<KeyCode>();
             while (movementStack.Count > 0)
             {
@@ -169,7 +233,6 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = new Vector2(currentSpeed, rb.linearVelocity.y);
     }
 
-    
     private bool IsGrounded()
     {
         Vector2 origin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y);
@@ -181,15 +244,14 @@ public class PlayerController : MonoBehaviour
             0f,
             Vector2.down,
             groundCheckDistance,
-            groundAndPipeLayers  // ← Combines ground + pipe
+            groundAndPipeLayers
         );
         return (hit.collider != null);
     }
 
-    // -------------------- PIPE CUTSCENE LOGIC --------------------
+    // ------------- PIPE CUTSCENE LOGIC (DOWN) -------------
     private void CheckPipeBelow()
     {
-        // BoxCast slightly below to detect a downward pipe
         Vector2 bottomOrigin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y);
         Vector2 size = new Vector2(playerCollider.bounds.size.x * 0.9f, 0.1f);
 
@@ -205,23 +267,30 @@ public class PlayerController : MonoBehaviour
         if (hit.collider != null)
         {
             Debug.Log("Pipe below detected! Starting downward cutscene...");
-            StartCoroutine(PipeCutscene());
+            StartCoroutine(PipeCutsceneDown());
             AudioManager.Instance.PlaySFX("Pipe");
         }
     }
 
     [System.Obsolete]
-    private IEnumerator PipeCutscene()
+    private IEnumerator PipeCutsceneDown()
     {
         isInPipeCutscene = true;
 
-        // Turn off collisions & move behind everything
+        // 1) Disable collisions & reorder sprite
         playerCollider.enabled = false;
-        if (playerSprite != null) playerSprite.sortingOrder = -10;
+        if (playerSprite != null) playerSprite.sortingOrder = behindSortingOrder;
+
+        // 2) Freeze gravity & velocity
+        float originalGravity = rb.gravityScale;
+        Vector2 originalVelocity = rb.velocity;
+        rb.gravityScale = 0f;
+        rb.velocity = Vector2.zero;
 
         float elapsed = 0f;
         while (elapsed < pipeMoveDuration)
         {
+            // Only the pipe movement is applied – no gravity or normal movement
             transform.position += Vector3.down * (pipeMoveSpeed * Time.deltaTime);
             elapsed += Time.deltaTime;
             yield return null;
@@ -232,15 +301,119 @@ public class PlayerController : MonoBehaviour
             transform.position = pipeDestination.position;
         }
 
-         // Switch the camera to underground after the pipe cutscene finishes
         FindObjectOfType<SideScrolling>().SetUnderground(true);
 
-
-        // Restore collisions & sprite order
+        // 3) Restore collisions & sprite
         playerCollider.enabled = true;
         if (playerSprite != null) playerSprite.sortingOrder = originalSortingOrder;
 
+        // 4) Restore gravity & velocity
+        rb.gravityScale = originalGravity;
+        rb.velocity = originalVelocity; // Optionally restore old velocity or just keep zero
+
         isInPipeCutscene = false;
-        Debug.Log("Pipe cutscene finished!");
+        Debug.Log("Pipe (down) cutscene finished!");
+    }
+
+    // ---------------- PIPE CUTSCENE LOGIC (RIGHT) ----------------
+    private void CheckPipeRight()
+    {
+        Vector2 rightOrigin = new Vector2(playerCollider.bounds.max.x, playerCollider.bounds.center.y);
+        Vector2 size = new Vector2(playerCollider.bounds.size.x * 0.9f, playerCollider.bounds.size.y);
+
+        RaycastHit2D hit = Physics2D.BoxCast(
+            rightOrigin,
+            size,
+            0f,
+            Vector2.right,
+            pipeCheckDistanceRight,
+            pipeLayerRight
+        );
+
+        if (hit.collider != null)
+        {
+            Debug.Log("Pipe to the right detected! Starting rightward cutscene...");
+            StartCoroutine(PipeCutsceneRight());
+            AudioManager.Instance.PlaySFX("Pipe");
+        }
+    }
+
+    [System.Obsolete]
+    private IEnumerator PipeCutsceneRight()
+    {
+        isInPipeCutscene = true;
+
+        // 1) Disable collisions & reorder sprite
+        playerCollider.enabled = false;
+        if (playerSprite != null) playerSprite.sortingOrder = behindSortingOrder;
+
+        // 2) Freeze gravity & velocity
+        float originalGravity = rb.gravityScale;
+        Vector2 originalVelocity = rb.velocity;
+        rb.gravityScale = 0f;
+        rb.velocity = Vector2.zero;
+
+        float elapsed = 0f;
+        while (elapsed < pipeMoveDurationRight)
+        {
+            // Only the pipe movement is applied
+            transform.position += Vector3.right * (pipeMoveSpeed * Time.deltaTime);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        if (pipeDestinationRight != null)
+        {
+            transform.position = pipeDestinationRight.position;
+        }
+
+        FindObjectOfType<SideScrolling>().SetUnderground(true);
+
+        // 3) Restore collisions & sprite
+        playerCollider.enabled = true;
+        if (playerSprite != null) playerSprite.sortingOrder = originalSortingOrder;
+
+        // 4) Restore gravity & velocity
+        rb.gravityScale = originalGravity;
+        rb.velocity = originalVelocity;
+
+        isInPipeCutscene = false;
+        Debug.Log("Pipe (right) cutscene finished!");
+    }
+
+
+    // ------------- PLAYER LEVEL LOGIC -------------
+    public void UpdatePlayerLevel(PlayerLevel newLevel)
+    {
+        if (newLevel == PlayerLevel.Level4_Star)
+        {
+            currentLevel = PlayerLevel.Level4_Star;
+            gameObject.tag = "StarMario";
+            if (fireShooter) fireShooter.SetActive(false);
+        }
+        else if (newLevel == PlayerLevel.Level3_Fire)
+        {
+            currentLevel = PlayerLevel.Level3_Fire;
+            gameObject.tag = "FireMario";
+            if (fireShooter) fireShooter.SetActive(true);
+        }
+        else if (newLevel == PlayerLevel.Level2_Big)
+        {
+            currentLevel = PlayerLevel.Level2_Big;
+            gameObject.tag = "BigMario";
+            if (fireShooter) fireShooter.SetActive(false);
+        }
+        else
+        {
+            currentLevel = PlayerLevel.Level1_Small;
+            gameObject.tag = "SmallMario";
+            if (fireShooter) fireShooter.SetActive(false);
+        }
+        Debug.Log("Player level updated to: " + currentLevel + ", tag = " + gameObject.tag);
+    }
+
+    public void UpdatePlayerForm(PlayerLevel newLevel)
+    {
+        UpdatePlayerLevel(newLevel);
     }
 }

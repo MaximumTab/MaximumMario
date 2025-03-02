@@ -11,7 +11,7 @@ public class SideScrolling : MonoBehaviour
     
     private void Awake()
     {
-        player = GameObject.FindWithTag("Player").transform;
+        player = GameObject.FindWithTag("SmallMario").transform;
     }
 
     private void LateUpdate()

@@ -434,7 +434,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &34182229
 SpriteRenderer:
@@ -491,6 +490,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &44675096 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+  m_PrefabInstance: {fileID: 1911781079}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &55908191
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +672,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &55908197
 SpriteRenderer:
@@ -902,7 +905,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &78260356
 SpriteRenderer:
@@ -959,6 +961,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &85979318 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+  m_PrefabInstance: {fileID: 553239641}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &98079921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,7 +1143,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &98079927
 SpriteRenderer:
@@ -1193,16 +1199,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &44675096 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-  m_PrefabInstance: {fileID: 1911781079}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &85979318 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-  m_PrefabInstance: {fileID: 553239641}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &117149735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,6 +1411,19 @@ Transform:
   - {fileID: 884678141}
   - {fileID: 1049371825}
   - {fileID: 1328023934}
+  - {fileID: 392779783}
+  - {fileID: 449446905}
+  - {fileID: 543735330}
+  - {fileID: 834827568}
+  - {fileID: 1200355270}
+  - {fileID: 1212004927}
+  - {fileID: 1477154542}
+  - {fileID: 1508121739}
+  - {fileID: 1762922819}
+  - {fileID: 1794311315}
+  - {fileID: 2059561354}
+  - {fileID: 2066575765}
+  - {fileID: 2083773026}
   m_Father: {fileID: 1188632267}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &133311221
@@ -7300,7 +7309,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &148242380
 SpriteRenderer:
@@ -7580,7 +7588,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &164447061
 SpriteRenderer:
@@ -7949,7 +7956,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &217902779
 SpriteRenderer:
@@ -8439,7 +8445,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &325719770
 SpriteRenderer:
@@ -8551,7 +8556,8 @@ GameObject:
   m_Component:
   - component: {fileID: 350850456}
   - component: {fileID: 350850455}
-  m_Layer: 0
+  - component: {fileID: 350850457}
+  m_Layer: 8
   m_Name: PipeConnection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8628,6 +8634,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374418338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &350850457
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350850454}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.02444458, y: -0.501214}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 3}
+    newSize: {x: 4, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 4.048889, y: 1.997572}
+  m_EdgeRadius: 0
 --- !u!1 &374418336
 GameObject:
   m_ObjectHideFlags: 0
@@ -9062,8 +9114,9 @@ MonoBehaviour:
   location: 
   RandomSeed: []
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 0}
+  FireReplace: {fileID: 0}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &392779788
 SpriteRenderer:
@@ -9346,8 +9399,9 @@ MonoBehaviour:
   location: 
   RandomSeed: []
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 0}
+  FireReplace: {fileID: 0}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &449446910
 SpriteRenderer:
@@ -9540,6 +9594,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481183758}
   m_CullTransparentMesh: 1
+--- !u!1 &511656943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 511656944}
+  m_Layer: 7
+  m_Name: "Tel\xF6eporter (1)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &511656944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511656943}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 171.7, y: -1.28, z: 0.0028705816}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -10041,8 +10126,9 @@ MonoBehaviour:
   location: 
   RandomSeed: []
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 0}
+  FireReplace: {fileID: 0}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &543735335
 SpriteRenderer:
@@ -10539,7 +10625,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &572766452
 SpriteRenderer:
@@ -10773,7 +10858,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &619013862
 SpriteRenderer:
@@ -11523,7 +11607,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &658739687
 SpriteRenderer:
@@ -11757,7 +11840,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &683387538
 SpriteRenderer:
@@ -12125,7 +12207,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &733619175
 SpriteRenderer:
@@ -12264,241 +12345,6 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 48, y: 13.4375}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &840936039
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 840936040}
-  - component: {fileID: 840936045}
-  - component: {fileID: 840936044}
-  - component: {fileID: 840936043}
-  - component: {fileID: 840936042}
-  - component: {fileID: 840936041}
-  m_Layer: 3
-  m_Name: Smash(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &840936040
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840936039}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 87.5, y: -0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 133311218}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &840936041
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840936039}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6e92e4c213de66941bbcf08d2c995c0a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!61 &840936042
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840936039}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.5}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.5, y: 0.07}
-  m_EdgeRadius: 0
---- !u!61 &840936043
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840936039}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &840936044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840936039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3728f95500d18049a0763e1621c76dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Invisible: 0
-  Lucky: 0
-  Smash: 0
-  isRandom: 0
-  location: 
-  RandomSeed:
-  - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
-  - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
-  - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
-  - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
-  - {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
-  GaurenteeObject: {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
-  CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
-  FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
-  Hp: 9
-  MariosmallTag: 
-  BrickAnim: {fileID: 0}
---- !u!212 &840936045
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840936039}
-  m_GameObject: {fileID: 791068907}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 0
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -5160660819957252609, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -12760,8 +12606,9 @@ MonoBehaviour:
   location: 
   RandomSeed: []
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 0}
+  FireReplace: {fileID: 0}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &834827573
 SpriteRenderer:
@@ -12770,6 +12617,239 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834827567}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -5160660819957252609, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &840936039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 840936040}
+  - component: {fileID: 840936045}
+  - component: {fileID: 840936044}
+  - component: {fileID: 840936043}
+  - component: {fileID: 840936042}
+  - component: {fileID: 840936041}
+  m_Layer: 3
+  m_Name: Smash(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &840936040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840936039}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 87.5, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 133311218}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &840936041
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840936039}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e92e4c213de66941bbcf08d2c995c0a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &840936042
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840936039}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.5, y: 0.07}
+  m_EdgeRadius: 0
+--- !u!61 &840936043
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840936039}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &840936044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840936039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3728f95500d18049a0763e1621c76dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Invisible: 0
+  Lucky: 0
+  Smash: 0
+  isRandom: 0
+  location: 
+  RandomSeed:
+  - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
+  - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
+  - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
+  - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
+  - {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
+  GaurenteeObject: {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
+  CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
+  FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  Hp: 9
+  BrickAnim: {fileID: 0}
+--- !u!212 &840936045
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840936039}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -12906,7 +12986,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1560185671}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &884664069
 --- !u!4 &869343250 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
@@ -12917,17 +12996,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
   m_PrefabInstance: {fileID: 1666882065}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &884923813 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-  m_PrefabInstance: {fileID: 1585753997}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &903762998 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-  m_PrefabInstance: {fileID: 1743543307}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &905584900
+--- !u!1 &884664069
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12936,24 +13005,18 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 884664070}
-  - component: {fileID: 884664075}
-  - component: {fileID: 884664074}
-  - component: {fileID: 884664073}
   - component: {fileID: 884664072}
+  - component: {fileID: 884664073}
+  - component: {fileID: 884664075}
   - component: {fileID: 884664071}
-  - component: {fileID: 905584901}
-  - component: {fileID: 905584906}
-  - component: {fileID: 905584905}
-  - component: {fileID: 905584904}
-  - component: {fileID: 905584903}
-  - component: {fileID: 905584902}
-  m_Layer: 3
-  m_Name: Pure Lucky(Clone)
+  - component: {fileID: 884664074}
+  m_Layer: 0
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &884664070
 Transform:
   m_ObjectHideFlags: 0
@@ -13110,7 +13173,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &884664075
 SpriteRenderer:
@@ -13344,7 +13406,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &884678146
 SpriteRenderer:
@@ -13401,6 +13462,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &884923813 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+  m_PrefabInstance: {fileID: 1585753997}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &886593536
 GameObject:
   m_ObjectHideFlags: 0
@@ -13609,7 +13675,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &888652853
 SpriteRenderer:
@@ -13843,7 +13908,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &888901230
 SpriteRenderer:
@@ -13900,6 +13964,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &903762998 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+  m_PrefabInstance: {fileID: 1743543307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &905584900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 905584901}
+  m_Layer: 3
+  m_Name: Pure Lucky(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &905584901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905584900}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &932265140
 GameObject:
   m_ObjectHideFlags: 0
@@ -14038,7 +14138,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932265140}
   m_CullTransparentMesh: 1
---- !u!1 &976875277
 --- !u!4 &940698156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
@@ -14109,12 +14208,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 976875278}
-  - component: {fileID: 976875283}
-  - component: {fileID: 976875282}
-  - component: {fileID: 976875281}
-  - component: {fileID: 976875280}
-  - component: {fileID: 976875279}
+  - component: {fileID: 970297113}
   m_Layer: 3
   m_Name: Smash(Clone)
   m_TagString: Untagged
@@ -14122,6 +14216,42 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &970297113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970297112}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &976875277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976875278}
+  - component: {fileID: 976875280}
+  - component: {fileID: 976875281}
+  - component: {fileID: 976875283}
+  - component: {fileID: 976875279}
+  - component: {fileID: 976875282}
+  m_Layer: 0
+  m_Name: 
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!4 &976875278
 Transform:
   m_ObjectHideFlags: 0
@@ -14278,7 +14408,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &976875283
 SpriteRenderer:
@@ -14735,7 +14864,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1000034355
 SpriteRenderer:
@@ -15098,7 +15226,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1049371830
 SpriteRenderer:
@@ -15243,69 +15370,6 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1107663744
---- !u!4 &1114718149 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-  m_PrefabInstance: {fileID: 1455427541}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1150812261
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2069424685}
-    m_Modifications:
-    - target: {fileID: 1445355763514779672, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_Name
-      value: Goomba
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 106.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
---- !u!1 &1155299773
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15314,18 +15378,18 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1107663745}
-  - component: {fileID: 1107663750}
-  - component: {fileID: 1107663749}
-  - component: {fileID: 1107663748}
   - component: {fileID: 1107663747}
+  - component: {fileID: 1107663748}
+  - component: {fileID: 1107663750}
   - component: {fileID: 1107663746}
-  m_Layer: 3
-  m_Name: Smash(Clone)
+  - component: {fileID: 1107663749}
+  m_Layer: 0
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1107663745
 Transform:
   m_ObjectHideFlags: 0
@@ -15482,7 +15546,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1107663750
 SpriteRenderer:
@@ -15539,6 +15602,99 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1114718149 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+  m_PrefabInstance: {fileID: 1455427541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1150812261
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2069424685}
+    m_Modifications:
+    - target: {fileID: 1445355763514779672, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_Name
+      value: Goomba
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 106.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+--- !u!1 &1155299773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1155299774}
+  m_Layer: 3
+  m_Name: Smash(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1155299774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155299773}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1188632265
 GameObject:
   m_ObjectHideFlags: 0
@@ -15890,8 +16046,9 @@ MonoBehaviour:
   location: 
   RandomSeed: []
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 0}
+  FireReplace: {fileID: 0}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1200355275
 SpriteRenderer:
@@ -16117,8 +16274,9 @@ MonoBehaviour:
   location: 
   RandomSeed: []
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 0}
+  FireReplace: {fileID: 0}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1212004932
 SpriteRenderer:
@@ -16291,43 +16449,6 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &1229028917
---- !u!4 &1240281242 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-  m_PrefabInstance: {fileID: 656109979}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1241581811
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1241581812}
-  m_Layer: 0
-  m_Name: Enemies
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1241581812
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1241581811}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.382989, y: 2.873396, z: -0.087059855}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1258908162
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16336,18 +16457,18 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1229028918}
-  - component: {fileID: 1229028923}
-  - component: {fileID: 1229028922}
-  - component: {fileID: 1229028921}
   - component: {fileID: 1229028920}
+  - component: {fileID: 1229028921}
+  - component: {fileID: 1229028923}
   - component: {fileID: 1229028919}
-  m_Layer: 3
-  m_Name: Pure Lucky(Clone)
+  - component: {fileID: 1229028922}
+  m_Layer: 0
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1229028918
 Transform:
   m_ObjectHideFlags: 0
@@ -16504,7 +16625,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1229028923
 SpriteRenderer:
@@ -16561,6 +16681,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1240281242 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+  m_PrefabInstance: {fileID: 656109979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1241581811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1241581812}
+  m_Layer: 0
+  m_Name: Enemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1241581812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241581811}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.382989, y: 2.873396, z: -0.087059855}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1246717588
 GameObject:
   m_ObjectHideFlags: 0
@@ -16738,7 +16894,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1246717594
 SpriteRenderer:
@@ -16972,7 +17127,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1247499029
 SpriteRenderer:
@@ -17029,6 +17183,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1258908162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1258908163}
+  m_Layer: 3
+  m_Name: Pure Lucky(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1258908163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258908162}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1269448850
 GameObject:
   m_ObjectHideFlags: 0
@@ -17206,7 +17391,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1269448856
 SpriteRenderer:
@@ -17606,7 +17790,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1327743925
 SpriteRenderer:
@@ -17840,7 +18023,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1328023939
 SpriteRenderer:
@@ -18150,6 +18332,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1455427541
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2069424685}
+    m_Modifications:
+    - target: {fileID: 1445355763514779672, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_Name
+      value: Goomba
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 89.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
 --- !u!1 &1460542950
 GameObject:
   m_ObjectHideFlags: 0
@@ -18323,18 +18562,18 @@ MonoBehaviour:
   - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
   - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
   - {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
-  RandomSeed: []
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 0}
+  FireReplace: {fileID: 0}
   Hp: 9
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
---- !u!212 &1419686599
+--- !u!212 &1460542956
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419686593}
+  m_GameObject: {fileID: 1460542950}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -18383,63 +18622,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1455427541
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2069424685}
-    m_Modifications:
-    - target: {fileID: 1445355763514779672, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_Name
-      value: Goomba
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 89.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
 --- !u!1 &1477154541
 GameObject:
   m_ObjectHideFlags: 0
@@ -18449,7 +18631,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1477154542}
-  - component: {fileID: 1477154547}
   - component: {fileID: 1477154546}
   - component: {fileID: 1477154545}
   - component: {fileID: 1477154544}
@@ -18612,64 +18793,7 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
---- !u!212 &1460542956
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460542950}
-  m_GameObject: {fileID: 1477154541}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 0
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -5160660819957252609, guid: 9e6feea4099084f4b94a0ac0d8b7e7d4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1001 &1495574190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18896,8 +19020,9 @@ MonoBehaviour:
   location: 
   RandomSeed: []
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 0}
+  FireReplace: {fileID: 0}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1508121744
 SpriteRenderer:
@@ -19078,6 +19203,7 @@ Transform:
   m_Children:
   - {fileID: 857478945}
   - {fileID: 1309718764}
+  - {fileID: 886593537}
   m_Father: {fileID: 1188632267}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1560185672
@@ -19684,7 +19810,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1623201288
 SpriteRenderer:
@@ -19918,7 +20043,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1629446050
 SpriteRenderer:
@@ -20111,6 +20235,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646986439}
   m_CullTransparentMesh: 1
+--- !u!1001 &1666882065
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2069424685}
+    m_Modifications:
+    - target: {fileID: 1445355763514779672, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_Name
+      value: Goomba
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 122.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
 --- !u!1 &1668462107
 GameObject:
   m_ObjectHideFlags: 0
@@ -20288,7 +20469,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1668462113
 SpriteRenderer:
@@ -20345,6 +20525,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1668539176
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2069424685}
+    m_Modifications:
+    - target: {fileID: 1445355763514779672, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_Name
+      value: Goomba
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 74.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
 --- !u!1 &1684884042
 GameObject:
   m_ObjectHideFlags: 0
@@ -20522,7 +20759,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1684884048
 SpriteRenderer:
@@ -20756,7 +20992,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1704199681
 SpriteRenderer:
@@ -20990,7 +21225,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1717490233
 SpriteRenderer:
@@ -21224,7 +21458,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1736048755
 SpriteRenderer:
@@ -21458,7 +21691,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1738775944
 SpriteRenderer:
@@ -21515,120 +21747,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1666882065
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2069424685}
-    m_Modifications:
-    - target: {fileID: 1445355763514779672, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_Name
-      value: Goomba
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 122.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
---- !u!1001 &1668539176
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2069424685}
-    m_Modifications:
-    - target: {fileID: 1445355763514779672, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_Name
-      value: Goomba
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 74.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
 --- !u!1001 &1743543307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21947,8 +22065,9 @@ MonoBehaviour:
   location: 
   RandomSeed: []
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 0}
+  FireReplace: {fileID: 0}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1762922824
 SpriteRenderer:
@@ -22231,8 +22350,9 @@ MonoBehaviour:
   location: 
   RandomSeed: []
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 0}
+  FireReplace: {fileID: 0}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1794311320
 SpriteRenderer:
@@ -22501,7 +22621,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1833290179
 SpriteRenderer:
@@ -22735,7 +22854,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1841536811
 SpriteRenderer:
@@ -22969,7 +23087,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1864216226
 SpriteRenderer:
@@ -24159,7 +24276,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1922991262
 --- !u!1001 &1911781079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24217,7 +24333,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
---- !u!1 &1937010179
+--- !u!1 &1922991262
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24226,18 +24342,18 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1922991263}
-  - component: {fileID: 1922991268}
-  - component: {fileID: 1922991267}
-  - component: {fileID: 1922991266}
   - component: {fileID: 1922991265}
+  - component: {fileID: 1922991266}
+  - component: {fileID: 1922991268}
   - component: {fileID: 1922991264}
-  m_Layer: 3
-  m_Name: Smash(Clone)
+  - component: {fileID: 1922991267}
+  m_Layer: 0
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1922991263
 Transform:
   m_ObjectHideFlags: 0
@@ -24394,7 +24510,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1922991268
 SpriteRenderer:
@@ -24451,13 +24566,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1967649133
+--- !u!1 &1937010179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1937010180}
+  m_Layer: 3
+  m_Name: Smash(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1937010180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937010179}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1938178078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
   m_PrefabInstance: {fileID: 1536011507}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1991622073
+--- !u!1 &1967649133
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24466,18 +24611,18 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1967649134}
-  - component: {fileID: 1967649139}
-  - component: {fileID: 1967649138}
-  - component: {fileID: 1967649137}
   - component: {fileID: 1967649136}
+  - component: {fileID: 1967649137}
+  - component: {fileID: 1967649139}
   - component: {fileID: 1967649135}
-  m_Layer: 3
-  m_Name: Smash(Clone)
+  - component: {fileID: 1967649138}
+  m_Layer: 0
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1967649134
 Transform:
   m_ObjectHideFlags: 0
@@ -24634,7 +24779,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &1967649139
 SpriteRenderer:
@@ -24691,6 +24835,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1991622073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1991622074}
+  m_Layer: 3
+  m_Name: Smash(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1991622074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991622073}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2005481614
 GameObject:
   m_ObjectHideFlags: 0
@@ -24843,7 +25018,7 @@ GameObject:
   - component: {fileID: 2033470427}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Small Mario
+  m_TagString: SmallMario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24868,7 +25043,7 @@ MonoBehaviour:
   gravityScale: 2
   groundAndPipeLayers:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 328
   groundCheckDistance: 0.1
   pipeLayer:
     serializedVersion: 2
@@ -24877,8 +25052,16 @@ MonoBehaviour:
   pipeMoveSpeed: 2
   pipeMoveDuration: 2
   pipeDestination: {fileID: 1378497801}
+  pipeLayerRight:
+    serializedVersion: 2
+    m_Bits: 256
+  pipeCheckDistanceRight: 1
+  pipeMoveDurationRight: 2
+  pipeDestinationRight: {fileID: 511656944}
   playerSprite: {fileID: 2033470424}
   behindSortingOrder: -10
+  currentLevel: 0
+  fireShooter: {fileID: 3958551494473220411, guid: 805c523fa37feca4db0aea9f1d8d057d, type: 3}
 --- !u!61 &2033470422
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25016,7 +25199,7 @@ Transform:
   m_GameObject: {fileID: 2033470420}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 188, y: -3.43, z: 0}
+  m_LocalPosition: {x: -3.58, y: 0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25237,7 +25420,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &2037567964
 SpriteRenderer:
@@ -25550,8 +25732,9 @@ MonoBehaviour:
   location: 
   RandomSeed: []
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 0}
+  FireReplace: {fileID: 0}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &2059561359
 SpriteRenderer:
@@ -25777,8 +25960,9 @@ MonoBehaviour:
   location: 
   RandomSeed: []
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 0}
+  FireReplace: {fileID: 0}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &2066575770
 SpriteRenderer:
@@ -26051,8 +26235,9 @@ MonoBehaviour:
   location: 
   RandomSeed: []
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 0}
+  FireReplace: {fileID: 0}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &2083773031
 SpriteRenderer:
@@ -26124,7 +26309,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2127743266}
   - component: {fileID: 2127743265}
-  m_Layer: 0
+  - component: {fileID: 2127743267}
+  m_Layer: 3
   m_Name: PipeBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26201,6 +26387,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374418338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2127743267
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127743264}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.036092132}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 1}
+    newSize: {x: 2, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2, y: 1.0721841}
+  m_EdgeRadius: 0
 --- !u!1 &2129417733
 GameObject:
   m_ObjectHideFlags: 0
@@ -26378,7 +26610,6 @@ MonoBehaviour:
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
-  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!212 &2129417739
 SpriteRenderer:
@@ -26439,6 +26670,12 @@ SpriteRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 905584901}
+  - {fileID: 970297113}
+  - {fileID: 1155299774}
+  - {fileID: 1258908163}
+  - {fileID: 1937010180}
+  - {fileID: 1991622074}
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1225295159}
@@ -26447,6 +26684,7 @@ SceneRoots:
   - {fileID: 2033470425}
   - {fileID: 621912244}
   - {fileID: 1378497801}
+  - {fileID: 511656944}
   - {fileID: 1744694551}
   - {fileID: 1901683673}
   - {fileID: 1241581812}
