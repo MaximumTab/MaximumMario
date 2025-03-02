@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2861752986786497725}
   m_Layer: 0
   m_Name: KoopaShell
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,5 +180,4 @@ MonoBehaviour:
   respawnTime: 5.5
   playerBounceForce: 5
   wakeUpSprite: {fileID: 21300000, guid: fccefe0675fda1d4f9a75280e96c198f, type: 3}
-  originalSprite: {fileID: 0}
   aliveKoopaPrefab: {fileID: 1445355763514779672, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}

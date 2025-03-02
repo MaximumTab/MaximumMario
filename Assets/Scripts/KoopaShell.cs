@@ -17,6 +17,7 @@ public class KoopaShell : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private Collider2D col;
+    private bool isRespawning = false;
     private Coroutine respawnCoroutine = null;
 
     void Start()
@@ -29,11 +30,10 @@ public class KoopaShell : MonoBehaviour
         rb.sharedMaterial = new PhysicsMaterial2D { friction = 0f, bounciness = 0f };
 
         rb.linearVelocity = Vector2.zero;
+
         originalSprite = spriteRenderer.sprite;
 
         respawnCoroutine = StartCoroutine(WakeUpAndRespawnSequence());
-
-        gameObject.tag = "Untagged"; // Default tag when idle
     }
 
     void FixedUpdate()
@@ -61,7 +61,7 @@ public class KoopaShell : MonoBehaviour
                 {
                     if (!isKicked)
                     {
-                        KickShell(other);
+                        KickShell(other, contact.normal.x > 0 ? -1 : 1);
                     }
                     else
                     {
@@ -97,7 +97,7 @@ public class KoopaShell : MonoBehaviour
                 }
             }
         }
-        else if (other.CompareTag("Enemy"))
+        else if (other.CompareTag("Enemy")) // Prevent Goombas from pushing shells
         {
             rb.linearVelocity = Vector2.zero;
         }
@@ -126,60 +126,35 @@ public class KoopaShell : MonoBehaviour
         scoreManager.IncrementStompCount();
     }
 
-    void KickShell(GameObject player)
+    void KickShell(GameObject player, int kickDirection = 0)
     {
         if (isKicked) return;
 
         AudioManager.Instance.PlaySFX("Kick");
         isKicked = true;
-
-        float playerX = player.transform.position.x;
-        float shellX = transform.position.x;
-        float yDifference = player.transform.position.y - transform.position.y;
-
-        if (Mathf.Abs(yDifference) > 0.2f)
-        {
-            // If kicked from above, always go right
-            direction = 1;
-        }
-        else
-        {
-            // If kicked from the side, move away from the player
-            direction = (playerX > shellX) ? -1 : 1;
-        }
-
+        direction = kickDirection != 0 ? kickDirection : (player.transform.position.x > transform.position.x ? 1 : -1);
         rb.linearVelocity = new Vector2(direction * shellSpeed, 0);
+
         spriteRenderer.sprite = originalSprite;
 
         if (respawnCoroutine != null)
         {
-            StopCoroutine(respawnCoroutine);
+            StopCoroutine(respawnCoroutine); // Stop respawn countdown if kicked
             respawnCoroutine = null;
         }
 
-        Invoke("SetEnemyTag", 0.5f);
-
-        Debug.Log($"Shell kicked! PlayerX: {playerX}, ShellX: {shellX}, Direction: {direction}");
-    }
-
-
-    private void SetEnemyTag()
-    {
-        gameObject.tag = "Enemy";
-        Debug.Log("Shell kicked! Now tagged as Enemy.");
+        Debug.Log("Shell kicked!");
     }
 
     void StopShell()
     {
         isKicked = false;
         rb.linearVelocity = Vector2.zero;
-        gameObject.tag = "Untagged"; 
-
-        Debug.Log("Shell stopped by player. Tag removed.");
+        Debug.Log("Shell stopped by player.");
 
         if (respawnCoroutine == null)
         {
-            respawnCoroutine = StartCoroutine(WakeUpAndRespawnSequence());
+            respawnCoroutine = StartCoroutine(WakeUpAndRespawnSequence()); // Restart respawn timer
         }
     }
 
@@ -199,7 +174,7 @@ public class KoopaShell : MonoBehaviour
     {
         yield return new WaitForSeconds(wakeUpTime);
 
-        if (!isKicked && rb.linearVelocity.magnitude < 0.1f) 
+        if (!isKicked)
         {
             ShowWakeUp();
             yield return new WaitForSeconds(respawnTime - wakeUpTime);
