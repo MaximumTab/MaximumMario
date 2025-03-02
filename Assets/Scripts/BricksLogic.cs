@@ -15,7 +15,7 @@ public class BricksLogic : MonoBehaviour
     [SerializeField] private GameObject FireReplace;
     [SerializeField] private GameObject BrokenBrick;
     [SerializeField] private int Hp=1;
-    private  string MariosmallTag = "Small Mario";
+    private  string MariosmallTag = "SmallMario";
     private int i = 0;
 
     [SerializeField] private Animator BrickAnim;
