@@ -17,20 +17,19 @@ public class Goomba : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        mainCamera = Camera.main; // Get the main camera reference
+        mainCamera = Camera.main; 
     }
 
     void Update()
     {
         if (hasActivated) return;
 
-        // Get camera boundaries
         Vector3 screenPoint = mainCamera.WorldToViewportPoint(transform.position);
 
         // Check if Goomba is just outside the camera's view (slightly off-screen)
         if (screenPoint.x > -0.02f && screenPoint.x < 1.02f && screenPoint.y > 0 && screenPoint.y < 1)
         {
-            hasActivated = true; // Start moving permanently
+            hasActivated = true; 
         }
     }
 
@@ -38,7 +37,6 @@ public class Goomba : MonoBehaviour
     {
         if (!hasActivated || isStomped) return;
 
-        // Ensure Goomba keeps moving left or right while falling naturally
         rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
     }
 
@@ -91,9 +89,12 @@ public class Goomba : MonoBehaviour
         }
 
         AudioManager.Instance.PlaySFX("Stomp");
-        FindAnyObjectByType<ScoreManager>().AddScore(100);
 
-        // Disable the Animator to stop it from overriding the sprite change
+        ScoreManager scoreManager = FindAnyObjectByType<ScoreManager>();
+        int stompScore = scoreManager.GetStompScore();
+        scoreManager.AddScore(stompScore, transform.position);
+        scoreManager.IncrementStompCount(); // Increase streak
+
         Animator animator = GetComponent<Animator>();
         if (animator != null)
         {
@@ -109,8 +110,7 @@ public class Goomba : MonoBehaviour
         // Disable physics interaction
         rb.simulated = false;
 
-        // Destroy Goomba after a delay
-        Invoke("DestroyGoomba", 0.2f); // 0.2 seconds before destruction
+        Invoke("DestroyGoomba", 0.2f); 
     }
 
 

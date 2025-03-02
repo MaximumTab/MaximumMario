@@ -419,4 +419,13 @@ public class PlayerController : MonoBehaviour
     {
         UpdatePlayerLevel(newLevel);
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            FindAnyObjectByType<ScoreManager>().ResetStompCount();
+        }
+    }
+
 }
