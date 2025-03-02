@@ -140,11 +140,14 @@ public class Goomba : MonoBehaviour
         rb.linearVelocity = new Vector2(0f, 5f);
         rb.angularVelocity = 360f; 
 
-        Collider2D col = GetComponent<Collider2D>();
-        if (col != null)
+        int ignoreLayer = LayerMask.NameToLayer("IGNOREALL");
+        if (ignoreLayer != -1)
         {
-            Physics2D.IgnoreLayerCollision(gameObject.layer, gameObject.layer, true);
-            col.enabled = false; 
+            gameObject.layer = ignoreLayer;
+        }
+        else
+        {
+            Debug.LogWarning("Layer 'IgnoreEverything' not found! Make sure you created it in Unity.");
         }
 
         ScoreManager scoreManager = FindAnyObjectByType<ScoreManager>();
@@ -152,7 +155,5 @@ public class Goomba : MonoBehaviour
 
         Destroy(gameObject, 3f);
     }
-
-
 
 }

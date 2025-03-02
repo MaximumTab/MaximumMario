@@ -12370,6 +12370,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &788950882
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1445355763514779672, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}
+      propertyPath: m_Name
+      value: Koopa
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.5107737
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.2116146
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0871
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550815874908298140, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96b23f0a0ce9c7e4ead7e7ad15703d61, type: 3}
 --- !u!1 &803093689
 GameObject:
   m_ObjectHideFlags: 0
@@ -19670,6 +19727,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 8f9d963c38cce744b8b305436b442b5f, type: 3}
   - name: Brickbump
     clip: {fileID: 8300000, guid: 482a0e03ddade4546b36bdbccfbb489e, type: 3}
+  - name: Kick
+    clip: {fileID: 8300000, guid: da63dbfd3c6700540be5eafbc75838c7, type: 3}
   conditionSounds:
   - name: Mario Dies
     clip: {fileID: 8300000, guid: 61374e4df91b695419fc98d9102858ff, type: 3}
@@ -26878,3 +26937,4 @@ SceneRoots:
   - {fileID: 1241581812}
   - {fileID: 803093691}
   - {fileID: 1151912950226839537}
+  - {fileID: 788950882}

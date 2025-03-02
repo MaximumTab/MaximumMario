@@ -68,6 +68,8 @@ public class PlayerController : MonoBehaviour
     private Vector2 originalColliderOffset;
     private PlayerLevel lastLevel;
 
+    private ScoreManager scoreManager; // Add reference to ScoreManager
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -90,6 +92,8 @@ public class PlayerController : MonoBehaviour
         // Initialize
         UpdatePlayerForm(currentLevel);
         lastLevel = currentLevel;
+
+        scoreManager = FindObjectOfType<ScoreManager>(); // Initialize ScoreManager reference
     }
 
     private void Update()
@@ -130,6 +134,11 @@ public class PlayerController : MonoBehaviour
     {
         bool previouslyGrounded = isGrounded;
         isGrounded = IsGrounded();
+
+        if (isGrounded && !previouslyGrounded)
+        {
+            scoreManager.ResetStompCount(); // Reset stomp count when player touches the ground
+        }
 
         if (!isInPipeCutscene)
         {
@@ -238,7 +247,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 origin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y);
         Vector2 size = new Vector2(playerCollider.bounds.size.x * 0.9f, 0.1f);
-
+        
         RaycastHit2D hit = Physics2D.BoxCast(
             origin,
             size,
@@ -413,31 +422,31 @@ public class PlayerController : MonoBehaviour
     }
 
     private void DowngradeLevel()
-{
-    // Star Mario takes no damage.
-    if (currentLevel == PlayerLevel.Level4_Star)
     {
-        Debug.Log("Star Mario is invincible! No downgrade.");
-        return; // Do nothing
-    }
+        // Star Mario takes no damage.
+        if (currentLevel == PlayerLevel.Level4_Star)
+        {
+            Debug.Log("Star Mario is invincible! No downgrade.");
+            return; // Do nothing
+        }
 
-    // If Fire, go to Big
-    if (currentLevel == PlayerLevel.Level3_Fire)
-    {
-        UpdatePlayerLevel(PlayerLevel.Level2_Big);
+        // If Fire, go to Big
+        if (currentLevel == PlayerLevel.Level3_Fire)
+        {
+            UpdatePlayerLevel(PlayerLevel.Level2_Big);
+        }
+        // If Big, go to Small
+        else if (currentLevel == PlayerLevel.Level2_Big)
+        {
+            UpdatePlayerLevel(PlayerLevel.Level1_Small);
+        }
+        // If already Small, "die" -> reload scene
+        else // Level1_Small
+        {
+            Debug.Log("Mario died! Reloading scene...");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
-    // If Big, go to Small
-    else if (currentLevel == PlayerLevel.Level2_Big)
-    {
-        UpdatePlayerLevel(PlayerLevel.Level1_Small);
-    }
-    // If already Small, "die" -> reload scene
-    else // Level1_Small
-    {
-        Debug.Log("Mario died! Reloading scene...");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-}
 
 
     private void OnCollisionEnter2D(Collision2D collision)
