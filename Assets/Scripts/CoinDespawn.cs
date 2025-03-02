@@ -20,6 +20,7 @@ public class CoinDespawn : MonoBehaviour
 
         if (AnimIsFinsihed())
         {
+            FindAnyObjectByType<ScoreManager>().AddScore(200, Vector3.zero, false);
             Destroy(gameObject);
         }
      
