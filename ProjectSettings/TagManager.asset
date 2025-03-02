@@ -10,6 +10,9 @@ TagManager:
   - BigMario
   - SmallMario
   - Enemy
+  - Mushroom
+  - Star
+  - FireFlower
   layers:
   - Default
   - TransparentFX
