@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class KoopaShell : MonoBehaviour
 {
@@ -28,8 +29,7 @@ public class KoopaShell : MonoBehaviour
 
         rb.linearVelocity = Vector2.zero;
 
-        Invoke("ShowWakeUp", wakeUpTime);
-        Invoke("Respawn", respawnTime);
+        StartCoroutine(WakeUpAndRespawnSequence());
     }
 
     void FixedUpdate()
@@ -53,11 +53,10 @@ public class KoopaShell : MonoBehaviour
                     Stomped(other);
                     return;
                 }
-                else if (Mathf.Abs(contact.normal.x) > Mathf.Abs(contact.normal.y)) 
+                else if (Mathf.Abs(contact.normal.x) > Mathf.Abs(contact.normal.y))
                 {
                     if (!isKicked)
                     {
-                        // this shouldnt damage player but is
                         KickShell(other, contact.normal.x > 0 ? -1 : 1);
                     }
                     else
@@ -117,13 +116,12 @@ public class KoopaShell : MonoBehaviour
         int stompScore = scoreManager.GetStompScore();
         scoreManager.AddScore(stompScore, transform.position);
         scoreManager.IncrementStompCount();
-
     }
 
     void KickShell(GameObject player, int kickDirection = 0)
     {
         if (isKicked) return;
-        
+
         AudioManager.Instance.PlaySFX("Kick");
         isKicked = true;
         direction = kickDirection != 0 ? kickDirection : (player.transform.position.x > transform.position.x ? 1 : -1);
@@ -147,6 +145,18 @@ public class KoopaShell : MonoBehaviour
         rb.AddForce(new Vector2(direction * 2f, 0), ForceMode2D.Impulse);
 
         Debug.Log("Shell reversed direction. New velocity: " + rb.linearVelocity);
+    }
+
+    IEnumerator WakeUpAndRespawnSequence()
+    {
+        yield return new WaitForSeconds(wakeUpTime);
+
+        if (!isKicked)
+        {
+            ShowWakeUp();
+            yield return new WaitForSeconds(respawnTime - wakeUpTime);
+            Respawn();
+        }
     }
 
     void ShowWakeUp()
