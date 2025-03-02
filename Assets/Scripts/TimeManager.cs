@@ -54,7 +54,7 @@ public class TimeManager : MonoBehaviour
 
         while (timeRemaining > 0)
         {
-            scoreManager.AddScore(50);
+            scoreManager.AddScore(50, transform.position);
             timeRemaining--;
             DisplayTime(timeRemaining);
             yield return new WaitForSeconds(0.01f);

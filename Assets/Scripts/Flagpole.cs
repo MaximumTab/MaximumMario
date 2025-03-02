@@ -29,7 +29,6 @@ public class Flagpole : MonoBehaviour
             TimeManager timeManager = FindAnyObjectByType<TimeManager>();
             timeManager?.StopTimer();
 
-            // Disable any player control script if one exists.
             var playerController = collision.GetComponent<PlayerController>();
             if (playerController != null)
             {
@@ -41,8 +40,7 @@ public class Flagpole : MonoBehaviour
             
             if (playerRb != null)
             {
-                // Reset velocity and ensure only rotation is frozen,
-                // so we can slide the player down the pole.
+
                 playerRb.linearVelocity = Vector2.zero;
                 playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
@@ -85,16 +83,14 @@ public class Flagpole : MonoBehaviour
 
         AudioManager.Instance.PlayConditionSound("LevelClear");
 
-        // Unfreeze the player completely except rotation and apply hop force
         playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
         playerRb.gravityScale = 1f;
-        playerRb.linearVelocity = Vector2.zero; // Reset velocity before applying force
+        playerRb.linearVelocity = Vector2.zero; 
         playerRb.AddForce(new Vector2(0, hopForceY), ForceMode2D.Impulse);
 
         // Start pushing the player right continuously
         StartCoroutine(PushPlayerRight());
 
-        // Wait until player reaches hidePoint X position
         while (Mathf.Abs(playerTransform.position.x - hidePoint.position.x) > 0.1f)
         {
             yield return null;
@@ -114,7 +110,7 @@ public class Flagpole : MonoBehaviour
     {
         while (true)
         {
-            playerRb.AddForce(Vector2.right * 5f, ForceMode2D.Force); // Adjust force if necessary
+            playerRb.AddForce(Vector2.right * 5f, ForceMode2D.Force); 
             yield return null;
         }
     }

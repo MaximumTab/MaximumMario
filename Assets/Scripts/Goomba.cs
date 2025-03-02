@@ -91,7 +91,11 @@ public class Goomba : MonoBehaviour
         }
 
         AudioManager.Instance.PlaySFX("Stomp");
-        FindAnyObjectByType<ScoreManager>().AddScore(100);
+
+        ScoreManager scoreManager = FindAnyObjectByType<ScoreManager>();
+        int stompScore = scoreManager.GetStompScore();
+        scoreManager.AddScore(stompScore, transform.position);
+        scoreManager.IncrementStompCount(); // Increase streak
 
         // Disable the Animator to stop it from overriding the sprite change
         Animator animator = GetComponent<Animator>();

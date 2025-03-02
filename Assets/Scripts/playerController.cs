@@ -243,4 +243,13 @@ public class PlayerController : MonoBehaviour
         isInPipeCutscene = false;
         Debug.Log("Pipe cutscene finished!");
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            FindAnyObjectByType<ScoreManager>().ResetStompCount();
+        }
+    }
+
 }
