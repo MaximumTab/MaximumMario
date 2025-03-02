@@ -14,8 +14,9 @@ public class BricksLogic : MonoBehaviour
     [SerializeField] private GameObject GaurenteeObject;
     [SerializeField] private GameObject CheckMush;
     [SerializeField] private GameObject FireReplace;
+    [SerializeField] private GameObject BrokenBrick;
     [SerializeField] private int Hp=1;
-    private string MariosmallTag = "Small Mario";
+    private  string MariosmallTag = "Small Mario";
     private int i = 0;
 
     [SerializeField] private Animator BrickAnim;
@@ -65,7 +66,9 @@ public class BricksLogic : MonoBehaviour
 
     private void Break()
     {
-        
+        GameObject Placed = Instantiate(BrokenBrick);
+        Placed.transform.position = gameObject.transform.position;
+        Destroy(gameObject);
     }
 
 
@@ -85,9 +88,9 @@ public class BricksLogic : MonoBehaviour
             BrickAnim.SetBool("Lucky", Lucky);
             BrickAnim.Play("Hp", 1);
         }
-        else if(Smash/*&&!other.CompareTag(MariosmallTag)*/)
+        else if(Smash&&!other.CompareTag(MariosmallTag))
         {
-            //Smashed block animation via other object
+            Break();
         }
     }
 }
