@@ -10,11 +10,16 @@ public class Koopa : MonoBehaviour
 
     public float stompForce = 5f; // Bounce force applied to player after stomping
     public GameObject shellPrefab; // Prefab for the shell version
+    public Sprite deathSprite; // New sprite for death animation
+    private bool isDead = false; // Prevents multiple triggers
+
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         mainCamera = Camera.main;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -31,7 +36,7 @@ public class Koopa : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!hasActivated) return;
+        if (!hasActivated || isDead) return;
         rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
     }
 
@@ -71,6 +76,8 @@ public class Koopa : MonoBehaviour
 
     void Stomped(GameObject player)
     {
+        if (isDead) return; // Prevent multiple activations
+
         // Spawn Shell Koopa
         GameObject shell = Instantiate(shellPrefab, transform.position, Quaternion.identity);
         
@@ -89,6 +96,39 @@ public class Koopa : MonoBehaviour
         scoreManager.IncrementStompCount();
 
         Destroy(gameObject); // Destroy Alive Koopa
+    }
+
+    public void KillKoopa()
+    {
+        if (isDead) return;
+        isDead = true;
+        if (GetComponent<Animator>() != null)
+        {
+            GetComponent<Animator>().enabled = false;
+        }
+        if (deathSprite != null)
+        {
+            spriteRenderer.sprite = deathSprite; // Change to death sprite
+        }
+
+        GetComponent<SpriteRenderer>().flipY = true; // Flip to indicate death
+        rb.linearVelocity = new Vector2(0f, 5f);
+        rb.angularVelocity = 360f;
+
+        int ignoreLayer = LayerMask.NameToLayer("IGNOREALL");
+        if (ignoreLayer != -1)
+        {
+            gameObject.layer = ignoreLayer;
+        }
+        else
+        {
+            Debug.LogWarning("Layer 'IgnoreEverything' not found! Make sure you created it in Unity.");
+        }
+
+        ScoreManager scoreManager = FindAnyObjectByType<ScoreManager>();
+        scoreManager.AddScore(100, transform.position);
+
+        Destroy(gameObject, 3f);
     }
 
     void PlayerHit(GameObject player)

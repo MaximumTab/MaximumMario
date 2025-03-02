@@ -145,10 +145,6 @@ public class Goomba : MonoBehaviour
         {
             gameObject.layer = ignoreLayer;
         }
-        else
-        {
-            Debug.LogWarning("Layer 'IgnoreEverything' not found! Make sure you created it in Unity.");
-        }
 
         ScoreManager scoreManager = FindAnyObjectByType<ScoreManager>();
         scoreManager.AddScore(100, transform.position);

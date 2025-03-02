@@ -201,3 +201,4 @@ MonoBehaviour:
   speed: 2
   stompForce: 5
   shellPrefab: {fileID: 1445355763514779672, guid: dbb252cfc0bf64d418cdbcbcef49a50b, type: 3}
+  deathSprite: {fileID: 21300000, guid: 212cba2c0daacfd41a5dd77111941fad, type: 3}

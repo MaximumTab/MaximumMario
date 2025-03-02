@@ -9,6 +9,7 @@ public class Fireball : MonoBehaviour
 
     private int bounceCount = 0;
     private Rigidbody2D rb;
+    private bool hasExploded = false; // Prevents multiple triggers
 
     void Start()
     {
@@ -18,27 +19,57 @@ public class Fireball : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Ground") || !collision.CompareTag("Ground") && bounceCount > maxBounces)
-        {
-            animator.SetBool("hasColided", true);
-        }
+        if (hasExploded) return; // Prevents multiple explosions
 
         if (collision.CompareTag("Enemy"))
         {
-            Destroy(collision.gameObject); 
-            Destroy(gameObject); 
+            HandleEnemyHit(collision.gameObject);
         }
         else if (collision.CompareTag("Ground"))
         {
-            if (bounceCount < maxBounces)
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce); 
-                bounceCount++;
-            }
-            else
-            {
-                Destroy(gameObject); 
-            }
+            HandleGroundBounce();
         }
+    }
+
+    void HandleEnemyHit(GameObject enemy)
+    {
+        if (hasExploded) return;
+        hasExploded = true;
+
+        if (enemy.TryGetComponent(out Goomba goomba))
+        {
+            goomba.KillGoomba();
+        }
+        else if (enemy.TryGetComponent(out Koopa koopa))
+        {
+            koopa.KillKoopa();
+        }
+        else
+        {
+            Destroy(enemy); // Destroy other enemies if necessary
+        }
+
+        Explode();
+    }
+
+    void HandleGroundBounce()
+    {
+        if (bounceCount < maxBounces)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
+            bounceCount++;
+        }
+        else
+        {
+            Explode();
+        }
+    }
+
+    void Explode()
+    {
+        hasExploded = true;
+        animator.SetBool("hasColided", true);
+        rb.simulated = false; // Disable physics
+        Destroy(gameObject, 0.2f); // Delay destruction for animation
     }
 }
