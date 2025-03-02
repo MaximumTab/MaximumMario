@@ -12,7 +12,7 @@ public class SideScrolling : MonoBehaviour
     private void Awake()
     {
         // Try to find "Big Mario", if not found, try "Small Mario"
-        GameObject playerObj = GameObject.FindWithTag("Big Mario") ?? GameObject.FindWithTag("Small Mario");
+        GameObject playerObj = GameObject.FindWithTag("BigMario") ?? GameObject.FindWithTag("SmallMario");
 
         if (playerObj != null)
         {
