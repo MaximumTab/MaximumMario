@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     private BoxCollider2D playerCollider;
+    private SpriteRenderer MarioSprite;
 
     private float targetSpeed;
     private float currentSpeed;
@@ -67,9 +69,12 @@ public class PlayerController : MonoBehaviour
     private Vector2 originalColliderSize;
     private Vector2 originalColliderOffset;
     private PlayerLevel lastLevel;
+    private Animator MarioAnim;
 
     private void Start()
     {
+        MarioAnim=gameObject.GetComponent<Animator>();
+        MarioSprite = gameObject.GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<BoxCollider2D>();
 
@@ -103,6 +108,12 @@ public class PlayerController : MonoBehaviour
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 AudioManager.Instance.PlaySFX("JumpSmall");
+                MarioAnim.SetBool("Jumped",true);
+            }
+
+            if (rb.linearVelocityY <=0.1f && isGrounded)
+            {
+                MarioAnim.SetBool("Jumped",false);
             }
 
             // Press S to check for downward pipe
@@ -128,13 +139,9 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        bool previouslyGrounded = isGrounded;
         isGrounded = IsGrounded();
-
         if (!isInPipeCutscene)
-        {
             MovePlayer();
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -167,6 +174,9 @@ public class PlayerController : MonoBehaviour
         float currentMaxSpeed = isSprinting ? sprintSpeed : maxSpeed;
 
         int movementDirection = GetMovementDirection();
+        MarioAnim.SetFloat("InputX",movementDirection);
+        MarioAnim.SetFloat("VelocityX",rb.linearVelocityX);
+        
         if (movementDirection != 0)
         {
             // Decelerate to zero if reversing direction
@@ -214,7 +224,7 @@ public class PlayerController : MonoBehaviour
     {
         if (movementStack.Count > 0)
         {
-            KeyCode lastKey = movementStack.Peek();
+            KeyCode lastKey = movementStack.Peek(); 
             return (lastKey == KeyCode.A) ? -1 : (lastKey == KeyCode.D ? 1 : 0);
         }
         return 0;
@@ -230,7 +240,7 @@ public class PlayerController : MonoBehaviour
         {
             currentSpeed = Mathf.MoveTowards(currentSpeed, targetSpeed, acceleration * Time.fixedDeltaTime);
         }
-
+        MarioAnim.SetFloat("Speed",Math.Abs(currentSpeed));
         rb.linearVelocity = new Vector2(currentSpeed, rb.linearVelocity.y);
     }
 
@@ -434,6 +444,8 @@ public class PlayerController : MonoBehaviour
     else // Level1_Small
     {
         Debug.Log("Mario died! Reloading scene...");
+        //MarioAnim.SetBool("Dead",true);
+        MarioAnim.Play("Death");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
