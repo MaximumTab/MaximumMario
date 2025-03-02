@@ -104,13 +104,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Invisible: 0
-  Lucky: 0
+  Lucky: 1
   Smash: 0
-  isRandom: 1
+  isRandom: 0
   location: 
-  RandomSeed: []
+  RandomSeed:
+  - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
+  - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
+  - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
+  - {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
+  - {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   GaurenteeObject: {fileID: 0}
+  CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
+  FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
   Hp: 1
+  MariosmallTag: 
   BrickAnim: {fileID: 0}
 --- !u!61 &1489548628238208020
 BoxCollider2D:
