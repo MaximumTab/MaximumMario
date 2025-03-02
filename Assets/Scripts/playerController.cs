@@ -204,7 +204,7 @@ public class PlayerController : MonoBehaviour
         {
             targetSpeed = 0f;
         }
-        MarioAnim.SetFloat("Speed",Math.Abs(currentSpeed));
+        MarioAnim.SetFloat("Speed",Math.Abs(currentSpeed/5));
     }
 
     private void HandleMovementKey(KeyCode key, int direction)
