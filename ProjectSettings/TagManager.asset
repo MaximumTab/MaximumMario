@@ -5,9 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
-  - Big Mario
-  - Small Mario
-  - Enemy
+  - StarMario
+  - FireMario
+  - BigMario
+  - SmallMario
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - InteractPipe
   - Teleporter
-  - 
+  - InteractPipe2
   - 
   - 
   - 
