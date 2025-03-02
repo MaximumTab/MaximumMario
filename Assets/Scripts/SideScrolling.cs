@@ -11,11 +11,23 @@ public class SideScrolling : MonoBehaviour
     
     private void Awake()
     {
-        player = GameObject.FindWithTag("Player").transform;
+        // Try to find "Big Mario", if not found, try "Small Mario"
+        GameObject playerObj = GameObject.FindWithTag("Big Mario") ?? GameObject.FindWithTag("Small Mario");
+
+        if (playerObj != null)
+        {
+            player = playerObj.transform;
+        }
+        else
+        {
+            Debug.LogError("No player found! Ensure the player has either 'Big Mario' or 'Small Mario' tag.");
+        }
     }
 
     private void LateUpdate()
     {
+        if (player == null) return; // Avoid errors if player isn't found
+
         leftScreenBound = Camera.main.ViewportToWorldPoint(Vector3.zero).x;
 
         Vector3 cameraPosition = transform.position;
@@ -32,9 +44,8 @@ public class SideScrolling : MonoBehaviour
         Vector3 cameraPosition = transform.position;
         cameraPosition.y = underground ? undergroundHeight : height;
         transform.position = cameraPosition;
+        
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlayMusic("UGmusic");
-    
     }
-
 }
