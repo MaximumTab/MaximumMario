@@ -54,10 +54,10 @@ public class TimeManager : MonoBehaviour
 
         while (timeRemaining > 0)
         {
-            scoreManager.AddScore(50, transform.position);
+            scoreManager.AddScore(50, Vector3.zero, false); // Prevent visual point spawning
             timeRemaining--;
             DisplayTime(timeRemaining);
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.02f);
         }
 
         isConvertingToScore = false;

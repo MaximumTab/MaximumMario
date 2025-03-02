@@ -20,7 +20,7 @@ public class Flagpole : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!flagpoleSequenceActive && (collision.CompareTag("Big Mario") || collision.CompareTag("Small Mario")))
+        if (!flagpoleSequenceActive && (collision.CompareTag("BigMario") || collision.CompareTag("SmallMario")))
         {
             flagpoleSequenceActive = true;
             

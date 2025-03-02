@@ -129,4 +129,30 @@ public class Goomba : MonoBehaviour
     {
         direction *= -1;
     }
+
+    public void KillGoomba()
+    {
+        if (isStomped) return;
+        isStomped = true;
+
+        spriteRenderer.flipY = true;
+
+        rb.linearVelocity = new Vector2(0f, 5f);
+        rb.angularVelocity = 360f; 
+
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null)
+        {
+            Physics2D.IgnoreLayerCollision(gameObject.layer, gameObject.layer, true);
+            col.enabled = false; 
+        }
+
+        ScoreManager scoreManager = FindAnyObjectByType<ScoreManager>();
+        scoreManager.AddScore(100, transform.position);
+
+        Destroy(gameObject, 3f);
+    }
+
+
+
 }
