@@ -19437,6 +19437,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goomba
       objectReference: {fileID: 0}
+    - target: {fileID: 3245064088598591817, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245064088598591817, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1933089587
+      objectReference: {fileID: 0}
     - target: {fileID: 4550815874908298140, guid: d6b87d5cff6f69544b120d901b275a1b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.5
