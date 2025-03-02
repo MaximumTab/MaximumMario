@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 619402537164762557}
   - component: {fileID: 8168017180847436984}
   - component: {fileID: 5760565233679244231}
+  - component: {fileID: -923390328069528841}
   m_Layer: 0
   m_Name: coins_from_box
   m_TagString: Untagged
@@ -110,3 +111,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-923390328069528841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2524071174018610190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f03ca56bc6ef6644853f29d8f2e21c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 5760565233679244231}
