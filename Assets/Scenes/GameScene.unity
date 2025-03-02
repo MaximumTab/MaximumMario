@@ -151,6 +151,7 @@ RectTransform:
   m_Children:
   - {fileID: 1646986440}
   - {fileID: 329100298}
+  - {fileID: 1090662493}
   m_Father: {fileID: 1225295159}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -433,6 +434,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &34182229
@@ -671,6 +673,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &55908197
@@ -904,6 +907,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &78260356
@@ -1142,6 +1146,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &98079927
@@ -7308,6 +7313,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &148242380
@@ -7587,6 +7593,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &164447061
@@ -7955,6 +7962,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &217902779
@@ -8444,6 +8452,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &325719770
@@ -8531,6 +8540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1646986441}
+  pointSpawner: {fileID: 1090662494}
 --- !u!4 &329100298
 Transform:
   m_ObjectHideFlags: 0
@@ -9116,6 +9126,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 0}
   FireReplace: {fileID: 0}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &392779788
@@ -9401,6 +9412,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 0}
   FireReplace: {fileID: 0}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &449446910
@@ -10130,6 +10142,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 0}
   FireReplace: {fileID: 0}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &543735335
@@ -10626,6 +10639,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &572766452
@@ -10859,6 +10873,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &619013862
@@ -11608,6 +11623,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &658739687
@@ -11841,6 +11857,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &683387538
@@ -12208,6 +12225,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &733619175
@@ -12610,6 +12628,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 0}
   FireReplace: {fileID: 0}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &834827573
@@ -12843,6 +12862,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 2524071174018610190, guid: 1478f312284f5894ea470f67d41ed5f3, type: 3}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 9
   BrickAnim: {fileID: 0}
 --- !u!212 &840936045
@@ -13174,6 +13194,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &884664075
@@ -13407,6 +13428,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &884678146
@@ -13676,6 +13698,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &888652853
@@ -13909,6 +13932,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &888901230
@@ -14409,6 +14433,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &976875283
@@ -14865,6 +14890,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1000034355
@@ -15227,6 +15253,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1049371830
@@ -15284,6 +15311,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1090662492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1090662493}
+  - component: {fileID: 1090662494}
+  m_Layer: 5
+  m_Name: PointSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1090662493
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090662492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9052373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1090662494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090662492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb1c9a33dab31f45b2456844f04ba6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatingPointsPrefab: {fileID: 6605317496771103057, guid: 117450db76fc4374d83876001ca33d02, type: 3}
+  pointSprites:
+  - {fileID: -4382339788487274730, guid: 457ffe043e586e34285e7f32d44a2dbb, type: 3}
+  - {fileID: 3787984777858363902, guid: 457ffe043e586e34285e7f32d44a2dbb, type: 3}
+  - {fileID: -981683652956656863, guid: 457ffe043e586e34285e7f32d44a2dbb, type: 3}
+  - {fileID: -7488190738308055661, guid: 457ffe043e586e34285e7f32d44a2dbb, type: 3}
+  - {fileID: -5421294143756372335, guid: 457ffe043e586e34285e7f32d44a2dbb, type: 3}
+  - {fileID: -3882507608873190533, guid: 457ffe043e586e34285e7f32d44a2dbb, type: 3}
+  - {fileID: 2247830478380462486, guid: 457ffe043e586e34285e7f32d44a2dbb, type: 3}
+  - {fileID: -8317857307866220357, guid: 457ffe043e586e34285e7f32d44a2dbb, type: 3}
+  - {fileID: -6432505594158500500, guid: 457ffe043e586e34285e7f32d44a2dbb, type: 3}
+  - {fileID: 7597584452152578758, guid: 457ffe043e586e34285e7f32d44a2dbb, type: 3}
+  - {fileID: -3095523077539661572, guid: 457ffe043e586e34285e7f32d44a2dbb, type: 3}
 --- !u!1 &1104553204
 GameObject:
   m_ObjectHideFlags: 0
@@ -15547,6 +15635,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1107663750
@@ -16050,6 +16139,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 0}
   FireReplace: {fileID: 0}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1200355275
@@ -16278,6 +16368,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 0}
   FireReplace: {fileID: 0}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1212004932
@@ -16626,6 +16717,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1229028923
@@ -16895,6 +16987,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1246717594
@@ -17128,6 +17221,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1247499029
@@ -17392,6 +17486,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1269448856
@@ -17791,6 +17886,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1327743925
@@ -18024,6 +18120,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 8032146495272500774, guid: d3c725a3832ad6944bae0feb5bc159be, type: 3}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1328023939
@@ -18567,6 +18664,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 0}
   FireReplace: {fileID: 0}
+  BrokenBrick: {fileID: 0}
   Hp: 9
   BrickAnim: {fileID: 0}
 --- !u!212 &1460542956
@@ -18794,6 +18892,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!1001 &1495574190
@@ -19024,6 +19123,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 0}
   FireReplace: {fileID: 0}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1508121744
@@ -19810,6 +19910,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1623201288
@@ -20043,6 +20144,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1629446050
@@ -20469,6 +20571,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1668462113
@@ -20759,6 +20862,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1684884048
@@ -20992,6 +21096,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1704199681
@@ -21225,6 +21330,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1717490233
@@ -21458,6 +21564,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1736048755
@@ -21691,6 +21798,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1738775944
@@ -22068,6 +22176,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 0}
   FireReplace: {fileID: 0}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1762922824
@@ -22353,6 +22462,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 0}
   FireReplace: {fileID: 0}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1794311320
@@ -22621,6 +22731,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1833290179
@@ -22854,6 +22965,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1841536811
@@ -23087,6 +23199,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1864216226
@@ -24510,6 +24623,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 6867015834684629534, guid: 521c358c04f451c448e995869015d641, type: 3}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1922991268
@@ -24779,6 +24893,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &1967649139
@@ -25420,6 +25535,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &2037567964
@@ -25735,6 +25851,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 0}
   FireReplace: {fileID: 0}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &2059561359
@@ -25963,6 +26080,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 0}
   FireReplace: {fileID: 0}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &2066575770
@@ -26238,6 +26356,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 0}
   FireReplace: {fileID: 0}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &2083773031
@@ -26610,6 +26729,7 @@ MonoBehaviour:
   GaurenteeObject: {fileID: 0}
   CheckMush: {fileID: 1622679551722668551, guid: 25338e5fb1de2ab4d85c22c85d5d1465, type: 3}
   FireReplace: {fileID: 304906884120234591, guid: 9fc9e2e2ed55ec44f832ac00b82bd56f, type: 3}
+  BrokenBrick: {fileID: 0}
   Hp: 1
   BrickAnim: {fileID: 0}
 --- !u!212 &2129417739
