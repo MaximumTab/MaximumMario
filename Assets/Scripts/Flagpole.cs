@@ -36,9 +36,10 @@ public class Flagpole : MonoBehaviour
             var playerController = collision.GetComponent<PlayerController>();
             if (playerController != null)
             {
+                playerController.MarioAnim.Play("FlagGrab");
                 playerController.enabled = false;
             }
-            
+
             playerRb = collision.GetComponent<Rigidbody2D>();
             playerTransform = collision.transform;
             
@@ -101,10 +102,13 @@ public class Flagpole : MonoBehaviour
         playerRb.gravityScale = 1f;
         playerRb.linearVelocity = Vector2.zero;
         playerRb.AddForce(new Vector2(0, hopForceY), ForceMode2D.Impulse);
+        
+        var playerController = playerRb.GetComponent<PlayerController>();
+        playerController.MarioAnim.Play("SmallRight");
 
         // Start pushing the player right continuously
         StartCoroutine(PushPlayerRight());
-
+        
         while (Mathf.Abs(playerTransform.position.x - hidePoint.position.x) > 0.1f)
         {
             yield return null;
