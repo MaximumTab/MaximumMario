@@ -1,4 +1,5 @@
 using System;
+using UnityEditor.UIElements;
 using UnityEngine;
 
 public class BricksLogic : MonoBehaviour
@@ -11,8 +12,10 @@ public class BricksLogic : MonoBehaviour
     [SerializeField] private string location;
     [SerializeField] private GameObject[] RandomSeed;
     [SerializeField] private GameObject GaurenteeObject;
+    [SerializeField] private GameObject CheckMush;
+    [SerializeField] private GameObject FireReplace;
     [SerializeField] private int Hp=1;
-    [SerializeField] private string MariosmallTag;
+    private string MariosmallTag = "Small Mario";
     private int i = 0;
 
     [SerializeField] private Animator BrickAnim;
@@ -33,15 +36,30 @@ public class BricksLogic : MonoBehaviour
     {
     }
 
-    private void SpewObject()
+    private void SpewObject(bool other)
     {
+        GameObject Placed;
         if (isRandom&&RandomSeed.Length>0)
         {
-            Instantiate(RandomSeed[UnityEngine.Random.Range(0,RandomSeed.Length)]);
+            GameObject TempOb = RandomSeed[UnityEngine.Random.Range(0, RandomSeed.Length)];
+            if (TempOb == CheckMush&& other)
+            {
+                TempOb = FireReplace;
+            }
+            Placed=Instantiate(TempOb);
+            Placed.transform.position = gameObject.transform.position;
         }
         else if(GaurenteeObject!=null)
         {
-            Instantiate(GaurenteeObject);
+            if (GaurenteeObject == CheckMush && other)
+            {
+                Placed=Instantiate(FireReplace);
+            }
+            else
+            {
+                Placed=Instantiate(GaurenteeObject);
+            }
+            Placed.transform.position = gameObject.transform.position;
         }
     }
 
@@ -59,7 +77,7 @@ public class BricksLogic : MonoBehaviour
             if(!Smash)
                 Hp -= 1;
             BrickAnim.Play("Brick Bounce", 0);
-            SpewObject();
+            SpewObject(!other.CompareTag(MariosmallTag));
         }
         if(Hp==0&&!Smash)
         {
