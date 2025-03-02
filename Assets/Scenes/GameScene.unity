@@ -22857,8 +22857,9 @@ MonoBehaviour:
   pipeDestinationRight: {fileID: 511656944}
   playerSprite: {fileID: 2033470424}
   behindSortingOrder: -10
-  currentLevel: 1
+  currentLevel: 0
   fireShooter: {fileID: 3958551494473220411, guid: 805c523fa37feca4db0aea9f1d8d057d, type: 3}
+  MarioAnim: {fileID: 0}
 --- !u!61 &2033470422
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -119,12 +119,10 @@ public class MushroomMovement : MonoBehaviour
                     float oldHeight = col.size.y;
                     float newHeight = oldHeight * 2f; // e.g., double
 
-                    // 3) Shift offset up by half the extra height
-                    float offsetShift = (newHeight - oldHeight) / 2f;
-
+                    
                     // 4) Apply the new size and offset
                     col.size = new Vector2(col.size.x, newHeight);
-                    col.offset = new Vector2(col.offset.x, col.offset.y + offsetShift);
+                    col.offset = new Vector2(col.offset.x, col.offset.y);
 
                     Debug.Log("Hitbox grown: oldHeight=" + oldHeight + ", newHeight=" + newHeight);
                 }
