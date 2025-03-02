@@ -385,16 +385,10 @@ public class PlayerController : MonoBehaviour
     // ------------- PLAYER LEVEL LOGIC -------------
     public void UpdatePlayerLevel(PlayerLevel newLevel)
     {
-        if (newLevel == PlayerLevel.Level4_Star)
-        {
-            currentLevel = PlayerLevel.Level4_Star;
-            gameObject.tag = "StarMario";
-            if (fireShooter) fireShooter.SetActive(false);
-        }
-        else if (newLevel == PlayerLevel.Level3_Fire)
+        if (newLevel == PlayerLevel.Level3_Fire)
         {
             currentLevel = PlayerLevel.Level3_Fire;
-            gameObject.tag = "FireMario";
+            gameObject.tag = "BigMario";
             if (fireShooter) fireShooter.SetActive(true);
         }
         else if (newLevel == PlayerLevel.Level2_Big)
