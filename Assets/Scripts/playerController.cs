@@ -67,11 +67,13 @@ public class PlayerController : MonoBehaviour
     private Vector2 originalColliderSize;
     private Vector2 originalColliderOffset;
     private PlayerLevel lastLevel;
+    private Animator MarioAnim;
 
     private ScoreManager scoreManager; // Add reference to ScoreManager
 
     private void Start()
     {
+        MarioAnim=gameObject.GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<BoxCollider2D>();
 
@@ -92,8 +94,6 @@ public class PlayerController : MonoBehaviour
         // Initialize
         UpdatePlayerForm(currentLevel);
         lastLevel = currentLevel;
-
-        scoreManager = FindObjectOfType<ScoreManager>(); // Initialize ScoreManager reference
     }
 
     private void Update()
@@ -107,6 +107,12 @@ public class PlayerController : MonoBehaviour
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 AudioManager.Instance.PlaySFX("JumpSmall");
+                MarioAnim.SetBool("Jumped",true);
+            }
+
+            if (rb.linearVelocityY <=0.1f && isGrounded)
+            {
+                MarioAnim.SetBool("Jumped",false);
             }
 
             // Press S to check for downward pipe
@@ -141,9 +147,7 @@ public class PlayerController : MonoBehaviour
         }
 
         if (!isInPipeCutscene)
-        {
             MovePlayer();
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -176,6 +180,9 @@ public class PlayerController : MonoBehaviour
         float currentMaxSpeed = isSprinting ? sprintSpeed : maxSpeed;
 
         int movementDirection = GetMovementDirection();
+        MarioAnim.SetFloat("InputX",movementDirection);
+        MarioAnim.SetFloat("VelocityX",rb.linearVelocityX);
+        
         if (movementDirection != 0)
         {
             // Decelerate to zero if reversing direction
@@ -247,7 +254,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 origin = new Vector2(playerCollider.bounds.center.x, playerCollider.bounds.min.y);
         Vector2 size = new Vector2(playerCollider.bounds.size.x * 0.9f, 0.1f);
-        
+
         RaycastHit2D hit = Physics2D.BoxCast(
             origin,
             size,
@@ -429,23 +436,25 @@ public class PlayerController : MonoBehaviour
             return; // Do nothing
         }
 
-        // If Fire, go to Big
-        if (currentLevel == PlayerLevel.Level3_Fire)
-        {
-            UpdatePlayerLevel(PlayerLevel.Level2_Big);
-        }
-        // If Big, go to Small
-        else if (currentLevel == PlayerLevel.Level2_Big)
-        {
-            UpdatePlayerLevel(PlayerLevel.Level1_Small);
-        }
-        // If already Small, "die" -> reload scene
-        else // Level1_Small
-        {
-            Debug.Log("Mario died! Reloading scene...");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+    // If Fire, go to Big
+    if (currentLevel == PlayerLevel.Level3_Fire)
+    {
+        UpdatePlayerLevel(PlayerLevel.Level2_Big);
     }
+    // If Big, go to Small
+    else if (currentLevel == PlayerLevel.Level2_Big)
+    {
+        UpdatePlayerLevel(PlayerLevel.Level1_Small);
+    }
+    // If already Small, "die" -> reload scene
+    else // Level1_Small
+    {
+        Debug.Log("Mario died! Reloading scene...");
+        //MarioAnim.SetBool("Dead",true);
+        MarioAnim.Play("Death");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+}
 
 
     private void OnCollisionEnter2D(Collision2D collision)

@@ -69,6 +69,7 @@ public class BricksLogic : MonoBehaviour
         GameObject Placed = Instantiate(BrokenBrick);
         Placed.transform.position = gameObject.transform.position;
         Destroy(gameObject);
+        AudioManager.Instance.PlaySFX("BrickBreak");
     }
 
 
